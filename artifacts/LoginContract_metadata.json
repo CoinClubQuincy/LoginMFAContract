@@ -129,6 +129,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "CheckUserCreds",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -136,7 +149,7 @@
 						"type": "address"
 					}
 				],
-				"name": "MintPermission",
+				"name": "GivePermission",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -485,11 +498,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/LoginContract.sol": {
-			"keccak256": "0xdc923da339ac7c18d1ab750cc79bc966106f893fd9ffcc6f52491614c7c94586",
+			"keccak256": "0x37401edddab268e008cb541874b5eb60bc6fac283b0561d8b1336b590cccaa00",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5523ddc2ad6fdd17cd28538fd539431e2b03dd912da30bb458dc56bb194b70ac",
-				"dweb:/ipfs/Qmc5fp6S99Rx2dw2ug8FHgkyeA8G4wrY1vGxt8n5DjsswF"
+				"bzz-raw://a26ac72b6eb32c5a1151970eb0ffbd56ff245eca685cc7897a94dee2dfa7ba40",
+				"dweb:/ipfs/Qmb1mauPr9LB4jWgELZG7ELEVZV2a4ktWjhv4i7vYRnpqu"
 			]
 		},
 		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {
