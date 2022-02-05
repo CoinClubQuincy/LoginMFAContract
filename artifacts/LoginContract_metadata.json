@@ -129,7 +129,13 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
 				"name": "CheckUserCreds",
 				"outputs": [
 					{
@@ -138,18 +144,12 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_DApp",
-						"type": "address"
-					}
-				],
-				"name": "GivePermission",
+				"inputs": [],
+				"name": "Login",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -157,7 +157,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -498,11 +498,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/LoginContract.sol": {
-			"keccak256": "0x37401edddab268e008cb541874b5eb60bc6fac283b0561d8b1336b590cccaa00",
+			"keccak256": "0x978748fa2513a5e951ce15fde05c4e92f3dc963013d0ebd3c77a6fc4c661f953",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a26ac72b6eb32c5a1151970eb0ffbd56ff245eca685cc7897a94dee2dfa7ba40",
-				"dweb:/ipfs/Qmb1mauPr9LB4jWgELZG7ELEVZV2a4ktWjhv4i7vYRnpqu"
+				"bzz-raw://11fdaa3b48c13443fc0b22e41e3f6e10c4fafee38e71353681074716a71f266c",
+				"dweb:/ipfs/QmSm7FqhVNXods5BEELVYJvckPv2o87PXiehYj8DWqKorm"
 			]
 		},
 		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {

@@ -14,10 +14,11 @@ contract LoginContract is PrivateAccessToken("Password","This is a passwordToken
 
     constructor(){}
     //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens
-    function Login(string memory _password)public OnlyToken returns(bool){
-        
-        if(_password == PrivateData){
+    function Login()public view OnlyToken returns(bool){
+        if(1 == PermissionToken){
             return true;
+        } else{
+            return false;
         }
     }
     function CheckUserCreds(address _user)public view returns(bool){
