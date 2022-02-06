@@ -41,14 +41,13 @@ contract DAppLoginContract{
     //Keeps list of Login Contracts
     struct Logins{
         bool exist;
+        bool status;
     }
     //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
     function AddPasswordContract(address _LoginContract)public{
-        logins[_LoginContract] =Logins(true);
+        logins[_LoginContract] =Logins(true,true);
         LoginCount++;
     }
-    //check index for accou
-
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){
@@ -62,4 +61,4 @@ contract DAppLoginContract{
         }
     }
 }
-//
+//- Dev: Quincy J
