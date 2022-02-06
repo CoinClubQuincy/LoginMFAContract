@@ -44,7 +44,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -140,11 +140,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/LoginContract.sol": {
-			"keccak256": "0x74cdde75d5768e86f347f2b0bfcaf95a0059818440fc51a00157b55b428313a8",
+			"keccak256": "0x45640e0938152deb050d444012e63fc04197058f2b25f5d9ecb3cc1b5078aa32",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47ef8a3c71107986121f569ea210e801ddc67a7ea24d194e03f5dc23b46df8bb",
-				"dweb:/ipfs/QmdST3VT8mmdd5DnBtmDovb7yrUoBw6fatqofxpn3FNCJ1"
+				"bzz-raw://07451ef22408d6ccc05304953b9de163a4c9b1c722aaf2b8c630f44675f2fcef",
+				"dweb:/ipfs/QmWHJHegaS3rBg44FsBpCacqcDw7iKvpAXkHxgLcGK926j"
 			]
 		},
 		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {

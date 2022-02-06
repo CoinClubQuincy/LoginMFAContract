@@ -38,21 +38,24 @@ contract DAppLoginContract{
     
     constructor(){}
     
-    mapping(uint => Logins) logins;
+    mapping(address => Logins) logins;
     //Keeps list of Login Contracts
     struct Logins{
-        address DApp;
+        bool exist;
     }
     //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
     function AddPasswordContract(address _LoginContract)public{
-        logins[LoginCount] =Logins(_LoginContract);
+        logins[_LoginContract] =Logins(true);
+        LoginCount++;
     }
+    //check index for accou
+
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
-    function userLogin(address _LoginContract,string memory _enterPass)public returns(bool){
+    function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){
         bool Pass = LoginContract(_LoginContract).Login(_enterPass);  //Has correct Password
         bool Creds = LoginContract(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
-        if( Pass==true &&Creds==true){
+        if( Pass==true &&Creds==true &&logins[_LoginContract].exist==true){
             return true;  //user successfully logs in!
         }else{
             return false; //User fails to have correct NFT access or incorect password
