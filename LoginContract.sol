@@ -3,15 +3,15 @@ pragma solidity ^0.8.10;
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "./PrivateAccessToken.sol";
 
+interface LoginContract_Interface{
+    function Login(string memory _enterPass)external view returns(bool);
+    function CheckUserCreds(address _user)external view returns(bool);
+}
 contract LoginContract is PrivateAccessToken{
     //new token that will allow for a smart contract to check credentials 
     uint PermissionToken =1;
     string private Login_Pass;
 
-    mapping(uint => Logins) login_count;
-    struct Logins{
-        address DApp;
-    }
     //lauch Login contract with PrivateAccessToken Contract as dependancy
     constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(Login_Pass,_URI){}
 
@@ -34,5 +34,15 @@ contract LoginContract is PrivateAccessToken{
 }
 
 contract ExampleDApp{
+    uint LoginCount =0;
+    constructor(){}
+    
+    mapping(uint => Logins) login_count;
+    
+    struct Logins{
+        address DApp;
+    }
 
+    function AddPasswordContract(address _LoginContract)public{}
+    function userLogin(string memory _enterPass)public{}
 }
