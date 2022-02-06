@@ -32,4 +32,4 @@ contract PrivateAccessToken is ERC1155{
         return balanceOf(msg.sender,0);
     }
 }
-
+//- Dev: Quincy J
