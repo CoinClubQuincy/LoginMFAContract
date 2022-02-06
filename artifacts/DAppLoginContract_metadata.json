@@ -6,33 +6,37 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_user",
+						"name": "_LoginContract",
 						"type": "address"
 					}
 				],
-				"name": "CheckUserCreds",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
+				"name": "AddPasswordContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
 					{
 						"internalType": "string",
 						"name": "_enterPass",
 						"type": "string"
 					}
 				],
-				"name": "Login",
+				"name": "userLogin",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -40,7 +44,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -57,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Documents/GitHub/LoginContract/LoginContract.sol": "LoginContract_Interface"
+			"Documents/GitHub/LoginContract/LoginContract.sol": "DAppLoginContract"
 		},
 		"evmVersion": "london",
 		"libraries": {},

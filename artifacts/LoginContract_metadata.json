@@ -515,11 +515,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/LoginContract.sol": {
-			"keccak256": "0xa0d00d911659d4e7b254b52f8a21f7174a95721a7dc57bb36aa9744f7bf862e7",
+			"keccak256": "0x74cdde75d5768e86f347f2b0bfcaf95a0059818440fc51a00157b55b428313a8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bab60e4c67d076c71ea693d42b9217e30b0ceb8f15c63729514192f721e8df84",
-				"dweb:/ipfs/QmUFTA4nS77V7Zw68sCs5Pn95LQ5ak5WEqf5xgqr51bwf1"
+				"bzz-raw://47ef8a3c71107986121f569ea210e801ddc67a7ea24d194e03f5dc23b46df8bb",
+				"dweb:/ipfs/QmdST3VT8mmdd5DnBtmDovb7yrUoBw6fatqofxpn3FNCJ1"
 			]
 		},
 		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {

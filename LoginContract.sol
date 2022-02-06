@@ -7,7 +7,7 @@ interface LoginContract_Interface{
     function Login(string memory _enterPass)external view returns(bool);
     function CheckUserCreds(address _user)external view returns(bool);
 }
-contract LoginContract is PrivateAccessToken{
+contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     //new token that will allow for a smart contract to check credentials 
     uint PermissionToken =1;
     string private Login_Pass;
@@ -32,17 +32,30 @@ contract LoginContract is PrivateAccessToken{
         }
     }
 }
-
-contract ExampleDApp{
+//DApps can have this contract be the login contract for users to use this application
+contract DAppLoginContract{
     uint LoginCount =0;
+    
     constructor(){}
     
-    mapping(uint => Logins) login_count;
-    
+    mapping(uint => Logins) logins;
+    //Keeps list of Login Contracts
     struct Logins{
         address DApp;
     }
-
-    function AddPasswordContract(address _LoginContract)public{}
-    function userLogin(string memory _enterPass)public{}
+    //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
+    function AddPasswordContract(address _LoginContract)public{
+        logins[LoginCount] =Logins(_LoginContract);
+    }
+    //user can login and have DApp check login COntract for validity
+    // contract address & password to login
+    function userLogin(address _LoginContract,string memory _enterPass)public returns(bool){
+        bool Pass = LoginContract(_LoginContract).Login(_enterPass);  //Has correct Password
+        bool Creds = LoginContract(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
+        if( Pass==true &&Creds==true){
+            return true;  //user successfully logs in!
+        }else{
+            return false; //User fails to have correct NFT access or incorect password
+        }
+    }
 }

@@ -398,7 +398,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"localhost/Documents/GitHub/LoginContract/PrivateAccessToken.sol": "PrivateAccessToken"
+			"Documents/GitHub/LoginContract/PrivateAccessToken.sol": "PrivateAccessToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -476,7 +476,7 @@
 				"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT"
 			]
 		},
-		"localhost/Documents/GitHub/LoginContract/PrivateAccessToken.sol": {
+		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {
 			"keccak256": "0xf923686e5e77b541cee63c30f045cbd6f24ae1891574dc4366921f321f97e699",
 			"license": "MIT",
 			"urls": [

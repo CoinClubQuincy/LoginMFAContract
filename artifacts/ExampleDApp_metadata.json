@@ -26,13 +26,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
+					{
 						"internalType": "string",
 						"name": "_enterPass",
 						"type": "string"
 					}
 				],
 				"name": "userLogin",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -129,11 +140,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/LoginContract.sol": {
-			"keccak256": "0xa0d00d911659d4e7b254b52f8a21f7174a95721a7dc57bb36aa9744f7bf862e7",
+			"keccak256": "0x35bc5fbb8fffd78ca86a6160fb11a7a861d4658d3ffbca1b46fe532109377876",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bab60e4c67d076c71ea693d42b9217e30b0ceb8f15c63729514192f721e8df84",
-				"dweb:/ipfs/QmUFTA4nS77V7Zw68sCs5Pn95LQ5ak5WEqf5xgqr51bwf1"
+				"bzz-raw://e93eaaffeb07eeaae02b7e8dae97832c9543093872a5bc8680710138d5e1be61",
+				"dweb:/ipfs/QmQyWwJCqNV5nP3YCGPMLDRRMQb9Ethd4p136VE1KVNEUn"
 			]
 		},
 		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {

@@ -6,33 +6,37 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_user",
+						"name": "_LoginContract",
 						"type": "address"
 					}
 				],
-				"name": "CheckUserCreds",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
+				"name": "AddPasswordContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
 					{
 						"internalType": "string",
 						"name": "_enterPass",
 						"type": "string"
 					}
 				],
-				"name": "Login",
+				"name": "userLogin",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -40,7 +44,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -57,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Documents/GitHub/LoginContract/LoginContract.sol": "LoginContract_Interface"
+			"Documents/GitHub/LoginContract/LoginContract.sol": "DApp"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -136,11 +140,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/LoginContract.sol": {
-			"keccak256": "0x74cdde75d5768e86f347f2b0bfcaf95a0059818440fc51a00157b55b428313a8",
+			"keccak256": "0x9fe5f1f951c917a00e0a906706c50850d17b8be371ac13b799ff1eb06d0f23e3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47ef8a3c71107986121f569ea210e801ddc67a7ea24d194e03f5dc23b46df8bb",
-				"dweb:/ipfs/QmdST3VT8mmdd5DnBtmDovb7yrUoBw6fatqofxpn3FNCJ1"
+				"bzz-raw://1bade7fb8d3ac43ecd82c1710607d512a161d8a9566b5801b3fec878c016c935",
+				"dweb:/ipfs/QmPyBZCapv9bYSsDJnkAJY5AmFxKQLoJY18wm1JErYEFcX"
 			]
 		},
 		"Documents/GitHub/LoginContract/PrivateAccessToken.sol": {
