@@ -3,6 +3,7 @@ pragma solidity ^0.8.10;
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "./PrivateAccessToken.sol";
 
+//interface for other contract to read status
 interface LoginContract_Interface{
     function Login(string memory _enterPass)external view returns(bool);
     function CheckUserCreds(address _user)external view returns(bool);
