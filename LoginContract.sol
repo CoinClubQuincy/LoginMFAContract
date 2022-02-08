@@ -52,8 +52,8 @@ contract DAppLoginContract{
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){
-        bool Pass = LoginContract(_LoginContract).Login(_enterPass);  //Has correct Password
-        bool Creds = LoginContract(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
+        bool Pass = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
+        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
         if( Pass==true &&Creds==true &&logins[_LoginContract].exist==true){
             return true;  //user successfully logs in!
