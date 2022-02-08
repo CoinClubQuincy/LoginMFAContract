@@ -63,11 +63,7 @@ contract DAppLoginContract{
     }
     function DAppLogin(address _LoginContract,address _user)internal view returns(bool){
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
-        if(Creds==true){
-            return true;
-        }else{
-            return false;
-        }
+        return Creds;
     }
 }
 //- Dev: Quincy J
