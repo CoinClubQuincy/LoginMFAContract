@@ -61,5 +61,13 @@ contract DAppLoginContract{
             return false; //User fails to have correct NFT access or incorect password
         }
     }
+    function DAppLogin(address _LoginContract,address _user)internal view returns(bool){
+        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
+        if(Creds==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
 //- Dev: Quincy J
