@@ -14,11 +14,11 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     string private Login_Pass;
 
     //lauch Login contract with PrivateAccessToken Contract as dependancy
-    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(Login_Pass,_URI){}
+    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){}
 
     //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens
     function Login(string memory _enterPass)public view OnlyToken returns(bool){
-        if(keccak256(abi.encodePacked(Login_Pass)) == keccak256(abi.encodePacked(_enterPass))){
+        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){
             return true;
         } else{
             return false;
