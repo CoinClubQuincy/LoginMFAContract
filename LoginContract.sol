@@ -12,9 +12,13 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     //new token that will allow for a smart contract to check credentials 
     uint PermissionToken =1;
     string private Login_Pass;
+    event ContractAddress(address indexed _ContractSelf);
+
 
     //lauch Login contract with PrivateAccessToken Contract as dependancy
-    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){}
+    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){
+        emit ContractAddress(address(this));
+    }
 
     //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens
     function Login(string memory _enterPass)public view OnlyToken returns(bool){
