@@ -53,7 +53,7 @@ contract DAppLoginContract{
         if(logins[_LoginContract].exist == true){
             return false;
         }else{
-            logins[_LoginContract] =Logins(true,true);
+            logins[_LoginContract] =Logins(true,false);
             TotalAccounts++;
             return true;
         }

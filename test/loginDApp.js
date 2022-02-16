@@ -16,7 +16,7 @@ contract('DAppLoginContract',() => {
         const instance = await DAppLoginContract.deployed();
         var register = await instance.Register("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10");
         const login = await(instance.userLogin("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","PASS")); 
-        const result = await(instance.CredToken("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","0xd2e8d80eec760da7dd35c7c21256e07f28d822d5")); 
+        const result = await(instance.CredToken("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","0xD2E8D80eeC760dA7DD35C7c21256e07f28d822D5")); 
         //LoginContract.address
         console.log(result);
         console.log(register);
