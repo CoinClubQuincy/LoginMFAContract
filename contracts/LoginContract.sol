@@ -10,7 +10,6 @@ interface LoginContract_Interface{
 }
 contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     //new token that will allow for a smart contract to check credentials 
-    uint PermissionToken =1;
     string private Login_Pass;
     event ContractAddress(address indexed _ContractSelf);
 

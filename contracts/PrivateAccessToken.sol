@@ -5,10 +5,11 @@ import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 contract PrivateAccessToken is ERC1155{
     string private PrivateData;
     uint Token =0;
+    uint totalNFTs=10;
     // when contract is launched, PrivateData & URI will be defined
     constructor(string memory _PrivateData,string memory URI)ERC1155(URI){
         PrivateData = _PrivateData;
-        _mint(msg.sender, Token, 5, ""); //5 total tokens
+        _mint(msg.sender, Token, totalNFTs, ""); //5 total tokens
     }
     //The modifier is so only the token holder is allowed to access function 
     modifier OnlyToken(){
@@ -41,13 +42,10 @@ contract PrivateAccessToken is ERC1155{
          PrivateData = _newData;
          return true;
     }
-    //
-    function Mint(bool _mint,uint _amount, address _account)public multi_Token returns(bool){
-        if(_mint == true){
-            _mint(msg.sender, Token, _amount, "");
-        } else {
-            _burn(_account, 0, _amount);
-        }
+    //Burn compramsed tokens
+    function Burn(bool _mint,uint _amount, address _account)public multi_Token returns(string memory){
+            _burn(_account, Token, _amount);
+            return "burning {_amount} Credential tokens from {_account}";
     }
 }
 
