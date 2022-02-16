@@ -3,20 +3,20 @@ const DAppLoginContract = artifacts.require("DAppLoginContract");
 
 contract('LoginContract',() => {
     it('Deploy Login Contract', async () => {
-        const instance = await LoginContract.deployed()
-        const result = await(instance.Login("PASS")) 
+        const instance = await LoginContract.deployed();
+        const result = await(instance.Login("PASS"));
         //LoginContract.address
-        console.log(result);
+        console.log(LoginContract.address);
         assert(LoginContract.address !== '');
     });
 });
 
 contract('DAppLoginContract',() => {
     it('Deploy Login Contract', async () => {
-        const instance = await DAppLoginContract.deployed()
-        //const result = await(instance.Login("PASS")) 
+        const instance = await DAppLoginContract.deployed();
+        const result = await(instance.DAppLogin("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","0xd2e8d80eec760da7dd35c7c21256e07f28d822d5")); 
         //LoginContract.address
-        console.log(instance.address);
+        console.log(result);
         assert(instance.address !== '');
     });
 });

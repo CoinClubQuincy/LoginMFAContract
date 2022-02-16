@@ -40,7 +40,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"CheckUserCreds\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_enterPass\",\"type\":\"string\"}],\"name\":\"Login\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LoginContract.sol\":\"LoginContract_Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\":{\"keccak256\":\"0xbe52adc8ccfd46744b73c19fa294b56f1f0be944c20459591900b1c35f2a1a10\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad9f276304d134fa20370d9d5356472170032268500d426942dc3592f2c975dc\",\"dweb:/ipfs/QmQYn91kSYkSf9gnf5VHgnpmyZ3DcPLUfGHXQXuvMbaxwh\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0xf920acc579a6c2067ca587b8d3993f6e737ac54f2dc3c4cd179d8df0e3f351d9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://900486cb37c3b173462e4d5929a7df08ef91d9ee544176cfa25189f3b556641e\",\"dweb:/ipfs/QmTMbsipusiSnqiUj9wnPjwdzUALoKhmVGRhhcYn36jGJg\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol\":{\"keccak256\":\"0xaca482b8f27dbab77b82282987d50a280c65f6254f3cac64e68ccd61f55e4822\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8d246c370ac1e074a0914bb0ffefddae0b69b051abb88962b4ed402d871311b2\",\"dweb:/ipfs/QmWmHh8LX2D3LP8KeXqjRE2Em4Xf2Ky84UXdtzp6W6ubqA\"]},\"@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":{\"keccak256\":\"0x825f445794b1c04301d3a309e53cfc336ec2bb306164ebe06590edc38d2c24ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://17a14396f1dd8d17b3cf8f7f0b488d90700319d383eb6509e448cf8517901150\",\"dweb:/ipfs/QmUD5P8JYojqtPDitJFByiQAg4zW8VwdA9g7pyikMdJ9Qu\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x9944d1038f27dcebff810d7ba16b3b8058b967173d76874fb72dd7cd84129656\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7c455cda07c5f8978c57e545ddde382552d3a55b6e3682e0f809ed07ec7defbe\",\"dweb:/ipfs/QmXkoKbxyMcMzjYdkXi5t4t3ZjBQ81pj7AaanS9jhePxyt\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4fd625dca17657403af518cc6c8ab5c54c58898cf6e912ca2e1b0f3194ad0405\",\"dweb:/ipfs/QmQVv7YeeKmaS11bg7YDTeeGDk6i7sV8LMMfohaLM4SiRu\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x905cd0ecd91d1de79a4679d745b79cf852ca8ccda5d25d1c49c6bd17a5edc0cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8dd1601fcd370546d8c06ea1902d7e7364fc490fbf0ebc3004230ef1f5db473c\",\"dweb:/ipfs/Qmb8zbC3TjWFtcuyP3KEEaegMkPcfeKAcPrwzvkAoMR3cZ\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x6aa521718bf139b44ce56f194f6aea1d590cacef995b5a84703fb1579fa49be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://100f8d367b5e94eb9cb991914f1de133cf272654c0708faa893bbc17a5b35b93\",\"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT\"]},\"project:/contracts/LoginContract.sol\":{\"keccak256\":\"0xc709b72b061abe444458db770042ee0022d24c920eda6b24aecff3e8bf0eec71\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bcc7b995b3e21a7cda5d41ad99b5d07e04bc06d0bdbad6726c0d38a46b383d0d\",\"dweb:/ipfs/QmYga62qF5GuxUjF3SoRF8MhRmyKYmGY6d6FEeNEcrXSie\"]},\"project:/contracts/PrivateAccessToken.sol\":{\"keccak256\":\"0xf923686e5e77b541cee63c30f045cbd6f24ae1891574dc4366921f321f97e699\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://32b06f323f797b2711502f61b56ee64355bf9f5bc0592bd477911b67a1e48700\",\"dweb:/ipfs/QmaqaGvLdu89qn2MMYWnnNA9UGTJ84mgT5ttZ3Kyudt7v4\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"CheckUserCreds\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_enterPass\",\"type\":\"string\"}],\"name\":\"Login\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LoginContract.sol\":\"LoginContract_Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\":{\"keccak256\":\"0xbe52adc8ccfd46744b73c19fa294b56f1f0be944c20459591900b1c35f2a1a10\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad9f276304d134fa20370d9d5356472170032268500d426942dc3592f2c975dc\",\"dweb:/ipfs/QmQYn91kSYkSf9gnf5VHgnpmyZ3DcPLUfGHXQXuvMbaxwh\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0xf920acc579a6c2067ca587b8d3993f6e737ac54f2dc3c4cd179d8df0e3f351d9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://900486cb37c3b173462e4d5929a7df08ef91d9ee544176cfa25189f3b556641e\",\"dweb:/ipfs/QmTMbsipusiSnqiUj9wnPjwdzUALoKhmVGRhhcYn36jGJg\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol\":{\"keccak256\":\"0xaca482b8f27dbab77b82282987d50a280c65f6254f3cac64e68ccd61f55e4822\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8d246c370ac1e074a0914bb0ffefddae0b69b051abb88962b4ed402d871311b2\",\"dweb:/ipfs/QmWmHh8LX2D3LP8KeXqjRE2Em4Xf2Ky84UXdtzp6W6ubqA\"]},\"@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":{\"keccak256\":\"0x825f445794b1c04301d3a309e53cfc336ec2bb306164ebe06590edc38d2c24ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://17a14396f1dd8d17b3cf8f7f0b488d90700319d383eb6509e448cf8517901150\",\"dweb:/ipfs/QmUD5P8JYojqtPDitJFByiQAg4zW8VwdA9g7pyikMdJ9Qu\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x9944d1038f27dcebff810d7ba16b3b8058b967173d76874fb72dd7cd84129656\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7c455cda07c5f8978c57e545ddde382552d3a55b6e3682e0f809ed07ec7defbe\",\"dweb:/ipfs/QmXkoKbxyMcMzjYdkXi5t4t3ZjBQ81pj7AaanS9jhePxyt\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4fd625dca17657403af518cc6c8ab5c54c58898cf6e912ca2e1b0f3194ad0405\",\"dweb:/ipfs/QmQVv7YeeKmaS11bg7YDTeeGDk6i7sV8LMMfohaLM4SiRu\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x905cd0ecd91d1de79a4679d745b79cf852ca8ccda5d25d1c49c6bd17a5edc0cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8dd1601fcd370546d8c06ea1902d7e7364fc490fbf0ebc3004230ef1f5db473c\",\"dweb:/ipfs/Qmb8zbC3TjWFtcuyP3KEEaegMkPcfeKAcPrwzvkAoMR3cZ\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x6aa521718bf139b44ce56f194f6aea1d590cacef995b5a84703fb1579fa49be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://100f8d367b5e94eb9cb991914f1de133cf272654c0708faa893bbc17a5b35b93\",\"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT\"]},\"project:/contracts/LoginContract.sol\":{\"keccak256\":\"0x86923197709799e7e39142152ea30aeac26825dfed6ee467439af10ed5da7bc8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a99e732cee407c938bf5c7a2b0f14bcc2009f6f71689b385f5a2712a4e670607\",\"dweb:/ipfs/QmadGebuzbZxZ1pdNRdmq1tRjGtWnQpmHVbnaZ82FvMnz4\"]},\"project:/contracts/PrivateAccessToken.sol\":{\"keccak256\":\"0xf923686e5e77b541cee63c30f045cbd6f24ae1891574dc4366921f321f97e699\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://32b06f323f797b2711502f61b56ee64355bf9f5bc0592bd477911b67a1e48700\",\"dweb:/ipfs/QmaqaGvLdu89qn2MMYWnnNA9UGTJ84mgT5ttZ3Kyudt7v4\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -48,7 +48,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.8.10;\n// SPDX-License-Identifier: MIT\nimport \"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\";\nimport \"./PrivateAccessToken.sol\";\n\n//interface for other contract to read status\ninterface LoginContract_Interface{\n    function Login(string memory _enterPass)external view returns(bool);\n    function CheckUserCreds(address _user)external view returns(bool);\n}\ncontract LoginContract is PrivateAccessToken,LoginContract_Interface{\n    //new token that will allow for a smart contract to check credentials \n    uint PermissionToken =1;\n    string private Login_Pass;\n    event ContractAddress(address indexed _ContractSelf);\n\n\n    //lauch Login contract with PrivateAccessToken Contract as dependancy\n    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){\n        emit ContractAddress(address(this));\n    }\n\n    //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens\n    function Login(string memory _enterPass)public view OnlyToken returns(bool){\n        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){\n            return true;\n        } else{\n            return false;\n        }\n    }\n    // external source can check if user data holds correct token\n    function CheckUserCreds(address _user)public view returns(bool){\n        if(PrivateAccessToken.OnlyIf(_user) == true){\n            return true;\n        } else {\n            return false;\n        }\n    }\n}\n//DApps can have this contract be the login contract for users to use this application\ncontract DAppLoginContract{\n    uint LoginCount =0;\n    constructor(){}\n    \n    mapping(address => Logins) logins;\n    //Keeps list of Login Contracts\n    struct Logins{\n        bool exist;\n        bool status;\n    }\n    //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract\n    function AddPasswordContract(address _LoginContract)public{\n        logins[_LoginContract] =Logins(true,true);\n        LoginCount++;\n    }\n    //user can login and have DApp check login COntract for validity\n    // contract address & password to login\n    function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){\n        bool Pass = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token\n        //Check Login Contract and Registration\n        if( Pass==true &&Creds==true &&logins[_LoginContract].exist==true){\n            return true;  //user successfully logs in!\n        }else{\n            return false; //User fails to have correct NFT access or incorect password\n        }\n    }\n    function DAppLogin(address _LoginContract,address _user)internal view returns(bool){\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);\n        return Creds;\n    }\n}\n//- Dev: Quincy J\n",
+  "source": "pragma solidity ^0.8.10;\n// SPDX-License-Identifier: MIT\nimport \"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\";\nimport \"./PrivateAccessToken.sol\";\n\n//interface for other contract to read status\ninterface LoginContract_Interface{\n    function Login(string memory _enterPass)external view returns(bool);\n    function CheckUserCreds(address _user)external view returns(bool);\n}\ncontract LoginContract is PrivateAccessToken,LoginContract_Interface{\n    //new token that will allow for a smart contract to check credentials \n    uint PermissionToken =1;\n    string private Login_Pass;\n    event ContractAddress(address indexed _ContractSelf);\n\n\n    //lauch Login contract with PrivateAccessToken Contract as dependancy\n    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){\n        emit ContractAddress(address(this));\n    }\n\n    //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens\n    function Login(string memory _enterPass)public view OnlyToken returns(bool){\n        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){\n            return true;\n        } else{\n            return false;\n        }\n    }\n    // external source can check if user data holds correct token\n    function CheckUserCreds(address _user)public view returns(bool){\n        if(PrivateAccessToken.OnlyIf(_user) == true){\n            return true;\n        } else {\n            return false;\n        }\n    }\n}\n//DApps can have this contract be the login contract for users to use this application\ncontract DAppLoginContract{\n    uint LoginCount =0;\n    constructor(){}\n    \n    mapping(address => Logins) logins;\n    //Keeps list of Login Contracts\n    struct Logins{\n        bool exist;\n        bool status;\n    }\n    //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract\n    function AddPasswordContract(address _LoginContract)public{\n        logins[_LoginContract] =Logins(true,true);\n        LoginCount++;\n    }\n    //user can login and have DApp check login COntract for validity\n    // contract address & password to login\n    function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){\n        bool Pass = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token\n        //Check Login Contract and Registration\n        if( Pass==true &&Creds==true &&logins[_LoginContract].exist==true){\n            return true;  //user successfully logs in!\n        }else{\n            return false; //User fails to have correct NFT access or incorect password\n        }\n    }\n    function DAppLogin(address _LoginContract,address _user)public view returns(bool){\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);\n        return Creds;\n    }\n}\n//- Dev: Quincy J\n",
   "sourcePath": "/Users/Q/Documents/GitHub/LoginContract/contracts/LoginContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/LoginContract.sol",
@@ -87,7 +87,7 @@
         1647
       ],
       "PrivateAccessToken": [
-        1962
+        1929
       ]
     },
     "id": 1840,
@@ -124,7 +124,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1840,
-        "sourceUnit": 1963,
+        "sourceUnit": 1930,
         "src": "117:34:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -324,7 +324,7 @@
               "id": 1648,
               "name": "PrivateAccessToken",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1962,
+              "referencedDeclaration": 1929,
               "src": "406:18:8"
             },
             "id": 1649,
@@ -352,7 +352,7 @@
         "linearizedBaseContracts": [
           1732,
           1647,
-          1962,
+          1929,
           1095,
           1273,
           1217,
@@ -620,7 +620,7 @@
                   "id": 1666,
                   "name": "PrivateAccessToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1962,
+                  "referencedDeclaration": 1929,
                   "src": "775:18:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -735,7 +735,7 @@
                                 "name": "ViewData",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1949,
+                                "referencedDeclaration": 1916,
                                 "src": "1102:8:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
@@ -1021,7 +1021,7 @@
                   "id": 1683,
                   "name": "OnlyToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1918,
+                  "referencedDeclaration": 1885,
                   "src": "1039:9:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -1152,10 +1152,10 @@
                           "name": "PrivateAccessToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1962,
+                          "referencedDeclaration": 1929,
                           "src": "1389:18:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$1962_$",
+                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$1929_$",
                             "typeString": "type(contract PrivateAccessToken)"
                           }
                         },
@@ -1166,7 +1166,7 @@
                         "lValueRequested": false,
                         "memberName": "OnlyIf",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1939,
+                        "referencedDeclaration": 1906,
                         "src": "1389:25:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
@@ -2481,7 +2481,7 @@
             "body": {
               "id": 1837,
               "nodeType": "Block",
-              "src": "2912:113:8",
+              "src": "2910:113:8",
               "statements": [
                 {
                   "assignments": [
@@ -2493,10 +2493,10 @@
                       "id": 1827,
                       "mutability": "mutable",
                       "name": "Creds",
-                      "nameLocation": "2927:5:8",
+                      "nameLocation": "2925:5:8",
                       "nodeType": "VariableDeclaration",
                       "scope": 1837,
-                      "src": "2922:10:8",
+                      "src": "2920:10:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -2507,7 +2507,7 @@
                         "id": 1826,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "2922:4:8",
+                        "src": "2920:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2525,7 +2525,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1821,
-                        "src": "2990:5:8",
+                        "src": "2988:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -2547,7 +2547,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1819,
-                            "src": "2959:14:8",
+                            "src": "2957:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -2566,7 +2566,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "2935:23:8",
+                          "src": "2933:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
@@ -2580,7 +2580,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "2935:39:8",
+                        "src": "2933:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
@@ -2595,7 +2595,7 @@
                       "memberName": "CheckUserCreds",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1646,
-                      "src": "2935:54:8",
+                      "src": "2933:54:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view external returns (bool)"
@@ -2609,7 +2609,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2935:61:8",
+                    "src": "2933:61:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -2617,7 +2617,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "2922:74:8"
+                  "src": "2920:74:8"
                 },
                 {
                   "expression": {
@@ -2626,7 +2626,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1827,
-                    "src": "3013:5:8",
+                    "src": "3011:5:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2635,10 +2635,11 @@
                   "functionReturnParameters": 1825,
                   "id": 1836,
                   "nodeType": "Return",
-                  "src": "3006:12:8"
+                  "src": "3004:12:8"
                 }
               ]
             },
+            "functionSelector": "2cc062a6",
             "id": 1838,
             "implemented": true,
             "kind": "function",
@@ -2721,7 +2722,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1838,
-                  "src": "2907:4:8",
+                  "src": "2905:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2732,7 +2733,7 @@
                     "id": 1823,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2907:4:8",
+                    "src": "2905:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2741,21 +2742,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2906:6:8"
+              "src": "2904:6:8"
             },
             "scope": 1839,
-            "src": "2829:196:8",
+            "src": "2829:194:8",
             "stateMutability": "view",
             "virtual": false,
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 1840,
-        "src": "1605:1422:8",
+        "src": "1605:1420:8",
         "usedErrors": []
       }
     ],
-    "src": "0:3046:8"
+    "src": "0:3044:8"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/LoginContract.sol",
@@ -2794,7 +2795,7 @@
         1647
       ],
       "PrivateAccessToken": [
-        1962
+        1929
       ]
     },
     "id": 1840,
@@ -2831,7 +2832,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1840,
-        "sourceUnit": 1963,
+        "sourceUnit": 1930,
         "src": "117:34:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3031,7 +3032,7 @@
               "id": 1648,
               "name": "PrivateAccessToken",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1962,
+              "referencedDeclaration": 1929,
               "src": "406:18:8"
             },
             "id": 1649,
@@ -3059,7 +3060,7 @@
         "linearizedBaseContracts": [
           1732,
           1647,
-          1962,
+          1929,
           1095,
           1273,
           1217,
@@ -3327,7 +3328,7 @@
                   "id": 1666,
                   "name": "PrivateAccessToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1962,
+                  "referencedDeclaration": 1929,
                   "src": "775:18:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3442,7 +3443,7 @@
                                 "name": "ViewData",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1949,
+                                "referencedDeclaration": 1916,
                                 "src": "1102:8:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
@@ -3728,7 +3729,7 @@
                   "id": 1683,
                   "name": "OnlyToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1918,
+                  "referencedDeclaration": 1885,
                   "src": "1039:9:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3859,10 +3860,10 @@
                           "name": "PrivateAccessToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1962,
+                          "referencedDeclaration": 1929,
                           "src": "1389:18:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$1962_$",
+                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$1929_$",
                             "typeString": "type(contract PrivateAccessToken)"
                           }
                         },
@@ -3873,7 +3874,7 @@
                         "lValueRequested": false,
                         "memberName": "OnlyIf",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1939,
+                        "referencedDeclaration": 1906,
                         "src": "1389:25:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
@@ -5188,7 +5189,7 @@
             "body": {
               "id": 1837,
               "nodeType": "Block",
-              "src": "2912:113:8",
+              "src": "2910:113:8",
               "statements": [
                 {
                   "assignments": [
@@ -5200,10 +5201,10 @@
                       "id": 1827,
                       "mutability": "mutable",
                       "name": "Creds",
-                      "nameLocation": "2927:5:8",
+                      "nameLocation": "2925:5:8",
                       "nodeType": "VariableDeclaration",
                       "scope": 1837,
-                      "src": "2922:10:8",
+                      "src": "2920:10:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -5214,7 +5215,7 @@
                         "id": 1826,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "2922:4:8",
+                        "src": "2920:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -5232,7 +5233,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1821,
-                        "src": "2990:5:8",
+                        "src": "2988:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -5254,7 +5255,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1819,
-                            "src": "2959:14:8",
+                            "src": "2957:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -5273,7 +5274,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "2935:23:8",
+                          "src": "2933:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
@@ -5287,7 +5288,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "2935:39:8",
+                        "src": "2933:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
@@ -5302,7 +5303,7 @@
                       "memberName": "CheckUserCreds",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1646,
-                      "src": "2935:54:8",
+                      "src": "2933:54:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view external returns (bool)"
@@ -5316,7 +5317,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2935:61:8",
+                    "src": "2933:61:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -5324,7 +5325,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "2922:74:8"
+                  "src": "2920:74:8"
                 },
                 {
                   "expression": {
@@ -5333,7 +5334,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1827,
-                    "src": "3013:5:8",
+                    "src": "3011:5:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -5342,10 +5343,11 @@
                   "functionReturnParameters": 1825,
                   "id": 1836,
                   "nodeType": "Return",
-                  "src": "3006:12:8"
+                  "src": "3004:12:8"
                 }
               ]
             },
+            "functionSelector": "2cc062a6",
             "id": 1838,
             "implemented": true,
             "kind": "function",
@@ -5428,7 +5430,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1838,
-                  "src": "2907:4:8",
+                  "src": "2905:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -5439,7 +5441,7 @@
                     "id": 1823,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2907:4:8",
+                    "src": "2905:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -5448,21 +5450,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2906:6:8"
+              "src": "2904:6:8"
             },
             "scope": 1839,
-            "src": "2829:196:8",
+            "src": "2829:194:8",
             "stateMutability": "view",
             "virtual": false,
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 1840,
-        "src": "1605:1422:8",
+        "src": "1605:1420:8",
         "usedErrors": []
       }
     ],
-    "src": "0:3046:8"
+    "src": "0:3044:8"
   },
   "compiler": {
     "name": "solc",
@@ -5470,7 +5472,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-02-15T19:08:31.920Z",
+  "updatedAt": "2022-02-16T02:15:12.656Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
