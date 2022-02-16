@@ -14,12 +14,10 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     string private Login_Pass;
     event ContractAddress(address indexed _ContractSelf);
 
-
     //lauch Login contract with PrivateAccessToken Contract as dependancy
     constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){
         emit ContractAddress(address(this));
     }
-
     //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens
     function Login(string memory _enterPass)public view OnlyToken returns(bool){
         if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){
@@ -39,7 +37,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
 }
 //DApps can have this contract be the login contract for users to use this application
 contract DAppLoginContract{
-    uint LoginCount =0;
+    uint TotalAccounts =0;
     constructor(){}
     
     mapping(address => Logins) logins;
@@ -49,9 +47,18 @@ contract DAppLoginContract{
         bool status;
     }
     //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
-    function AddPasswordContract(address _LoginContract)public{
+    function Register(address _LoginContract)public{
         logins[_LoginContract] =Logins(true,true);
-        LoginCount++;
+        TotalAccounts++;
+    }
+    //Checks Current Users Login Contracts
+    function LoginStatus(address _LoginContract) public view returns(bool){
+        return logins[_LoginContract].status;
+    }
+    //user Changes Login status
+    function Logout(address _LoginContract,address _user)public returns(bool){
+        require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
+        logins[_LoginContract].status==false;
     }
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
@@ -60,12 +67,15 @@ contract DAppLoginContract{
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
         if( Pass==true &&Creds==true &&logins[_LoginContract].exist==true){
+            logins[_LoginContract].status==true;
             return true;  //user successfully logs in!
         }else{
             return false; //User fails to have correct NFT access or incorect password
         }
     }
-    function DAppLogin(address _LoginContract,address _user)public view returns(bool){
+    //check user Credentials
+    function CredToken(address _LoginContract,address _user)public view returns(bool){
+        require(logins[_LoginContract].status==true);
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
         return Creds;
     }
