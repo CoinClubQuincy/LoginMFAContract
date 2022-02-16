@@ -62,15 +62,15 @@ contract DAppLoginContract{
         return logins[_LoginContract].status;
     }
     //user Changes Login status
-    function Logout(address _LoginContract,address _user)public view returns(bool){
+    function Logout(address _LoginContract,address _user)public view returns(string memory){
         require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
         logins[_LoginContract].status==false;
-        return true;
+        return "Logged out";
     }
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){
-        //require(logins[_LoginContract].exist==true);
+        require(logins[_LoginContract].exist==true);
         bool Pass = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration

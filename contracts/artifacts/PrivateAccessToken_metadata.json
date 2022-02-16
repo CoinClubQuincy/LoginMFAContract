@@ -142,30 +142,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_newData",
-						"type": "string"
-					}
-				],
-				"name": "Edit",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bool",
-						"name": "_mint",
-						"type": "bool"
-					},
-					{
 						"internalType": "uint256",
 						"name": "_amount",
 						"type": "uint256"
@@ -176,7 +152,26 @@
 						"type": "address"
 					}
 				],
-				"name": "Mint",
+				"name": "Burn",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newData",
+						"type": "string"
+					}
+				],
+				"name": "Edit",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -525,11 +520,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {
-			"keccak256": "0x9adf4ea481f7413b471e82c0d97d8dbf0b2a3f08b7fe7411f7dec7b2d792f33d",
+			"keccak256": "0x196604f9d18b4bf794c56cefb5704480b4d219521564a3ccad959c4025632fc9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://959f48c1645ed4ba4010ffaff0cd082fff396ee980b099633b218ffa7b4e3b4d",
-				"dweb:/ipfs/QmdTbL5KfUDMopx7zZSc8DhWoY4MDBg4C6SNF96UJWneMb"
+				"bzz-raw://224f92f5fa1d135ef5766664f158c44999974c13903069870729364c98193684",
+				"dweb:/ipfs/QmeiJtuXR16GHm3hkR47pE8wpGft6YSvEfgkMH6yjXMLsN"
 			]
 		}
 	},

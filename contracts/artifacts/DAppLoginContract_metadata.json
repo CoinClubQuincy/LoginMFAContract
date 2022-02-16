@@ -69,9 +69,9 @@
 				"name": "Logout",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "string",
 						"name": "",
-						"type": "bool"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -213,19 +213,19 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0x6ce27e9dbeaca83cee6cbc23dbc0d52d440201145210f7f351a119af997a057e",
+			"keccak256": "0x12678e35b8511ebf33e00b663c2289018603bbbf9b6c158d4474d14f0dd93f49",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://280403ab55264617fe551818262edfa1c6397f693a873acefb17a80bd38b0778",
-				"dweb:/ipfs/Qmciu1ho4irCDHMoNcbPc1eWdh3BP8CcK1adYv1RjLe5om"
+				"bzz-raw://7c2cfa60b96c26c2c40b0f506ce06e56b9ac9073502f05cb5a2f0197dd00b519",
+				"dweb:/ipfs/QmUH3TTndy1T4EDnHKp91GmwkYkRRmvyWTMA9co2X1suvK"
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {
-			"keccak256": "0xe2c0eec5248fa5be6e52fdc3cedd3fe2eeb077251136d4e9b7c6e2b608a1dd0a",
+			"keccak256": "0x196604f9d18b4bf794c56cefb5704480b4d219521564a3ccad959c4025632fc9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://910230b2eb88a0d5f892213b2c403aa98249a00c06bbf204f4bf21429e6caf25",
-				"dweb:/ipfs/QmWknuaZW6xjDihVMDs3LzLQL2SnXKPYGmnLpiPYXgPJ6k"
+				"bzz-raw://224f92f5fa1d135ef5766664f158c44999974c13903069870729364c98193684",
+				"dweb:/ipfs/QmeiJtuXR16GHm3hkR47pE8wpGft6YSvEfgkMH6yjXMLsN"
 			]
 		}
 	},
