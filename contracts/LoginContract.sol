@@ -14,10 +14,12 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     string private Login_Pass;
     event ContractAddress(address indexed _ContractSelf);
 
+
     //lauch Login contract with PrivateAccessToken Contract as dependancy
     constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){
         emit ContractAddress(address(this));
     }
+
     //I can grab the OnlyToken modifier from the Inherited contract to only allow to token holder to mint permission tokens
     function Login(string memory _enterPass)public view OnlyToken returns(bool){
         if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){
@@ -73,9 +75,8 @@ contract DAppLoginContract{
             return false; //User fails to have correct NFT access or incorect password
         }
     }
-    //check user Credentials
+    //check user
     function CredToken(address _LoginContract,address _user)public view returns(bool){
-        require(logins[_LoginContract].status==true);
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
         return Creds;
     }
