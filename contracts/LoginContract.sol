@@ -30,7 +30,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     }
     // external source can check if user data holds correct token
     function CheckUserCreds(address _user)public view returns(bool){
-        if(PrivateAccessToken.OnlyIf(_user) == true){
+        if(PrivateAccessToken.OnlyIf(_user,1) == true){
             return true;
         } else {
             return false;
@@ -63,9 +63,10 @@ contract DAppLoginContract{
         return logins[_LoginContract].status;
     }
     //user Changes Login status
-    function Logout(address _LoginContract,address _user)public returns(bool){
+    function Logout(address _LoginContract,address _user)public view returns(bool){
         require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
         logins[_LoginContract].status==false;
+        return true;
     }
     //user can login and have DApp check login COntract for validity
     // contract address & password to login

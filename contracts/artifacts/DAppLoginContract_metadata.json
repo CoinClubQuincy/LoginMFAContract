@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.11+commit.d7f03943"
+		"version": "0.8.12+commit.f00d7308"
 	},
 	"language": "Solidity",
 	"output": {
@@ -74,7 +74,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -213,19 +213,19 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0x36fc9f27fb82c8bbbae81ea3ba91d2c7891289969b1b7bd53db0dda4c6a56d7a",
+			"keccak256": "0x6ce27e9dbeaca83cee6cbc23dbc0d52d440201145210f7f351a119af997a057e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f4edea52460ffebf2f22edf023fca68b2299d1ddf8e984adb1c375d01f7f62a7",
-				"dweb:/ipfs/QmSJF7piZSGcns1wu2f8w7QQXofdiTsqUvL7Bv3Y6Jw3D5"
+				"bzz-raw://280403ab55264617fe551818262edfa1c6397f693a873acefb17a80bd38b0778",
+				"dweb:/ipfs/Qmciu1ho4irCDHMoNcbPc1eWdh3BP8CcK1adYv1RjLe5om"
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {
-			"keccak256": "0xf923686e5e77b541cee63c30f045cbd6f24ae1891574dc4366921f321f97e699",
+			"keccak256": "0xe2c0eec5248fa5be6e52fdc3cedd3fe2eeb077251136d4e9b7c6e2b608a1dd0a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://32b06f323f797b2711502f61b56ee64355bf9f5bc0592bd477911b67a1e48700",
-				"dweb:/ipfs/QmaqaGvLdu89qn2MMYWnnNA9UGTJ84mgT5ttZ3Kyudt7v4"
+				"bzz-raw://910230b2eb88a0d5f892213b2c403aa98249a00c06bbf204f4bf21429e6caf25",
+				"dweb:/ipfs/QmWknuaZW6xjDihVMDs3LzLQL2SnXKPYGmnLpiPYXgPJ6k"
 			]
 		}
 	},

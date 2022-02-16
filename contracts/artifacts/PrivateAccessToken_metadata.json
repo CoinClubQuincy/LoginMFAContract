@@ -9,12 +9,12 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_Pass",
+						"name": "_PrivateData",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "_URI",
+						"name": "URI",
 						"type": "string"
 					}
 				],
@@ -44,19 +44,6 @@
 					}
 				],
 				"name": "ApprovalForAll",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_ContractSelf",
-						"type": "address"
-					}
-				],
-				"name": "ContractAddress",
 				"type": "event"
 			},
 			{
@@ -155,25 +142,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "CheckUserCreds",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "string",
 						"name": "_newData",
 						"type": "string"
@@ -193,12 +161,22 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_enterPass",
-						"type": "string"
+						"internalType": "bool",
+						"name": "_mint",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_account",
+						"type": "address"
 					}
 				],
-				"name": "Login",
+				"name": "Mint",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -206,7 +184,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -468,7 +446,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Documents/GitHub/LoginContract/contracts/LoginContract.sol": "LoginContract"
+			"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": "PrivateAccessToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -546,20 +524,12 @@
 				"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT"
 			]
 		},
-		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0x6ce27e9dbeaca83cee6cbc23dbc0d52d440201145210f7f351a119af997a057e",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://280403ab55264617fe551818262edfa1c6397f693a873acefb17a80bd38b0778",
-				"dweb:/ipfs/Qmciu1ho4irCDHMoNcbPc1eWdh3BP8CcK1adYv1RjLe5om"
-			]
-		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {
-			"keccak256": "0xe2c0eec5248fa5be6e52fdc3cedd3fe2eeb077251136d4e9b7c6e2b608a1dd0a",
+			"keccak256": "0x9adf4ea481f7413b471e82c0d97d8dbf0b2a3f08b7fe7411f7dec7b2d792f33d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://910230b2eb88a0d5f892213b2c403aa98249a00c06bbf204f4bf21429e6caf25",
-				"dweb:/ipfs/QmWknuaZW6xjDihVMDs3LzLQL2SnXKPYGmnLpiPYXgPJ6k"
+				"bzz-raw://959f48c1645ed4ba4010ffaff0cd082fff396ee980b099633b218ffa7b4e3b4d",
+				"dweb:/ipfs/QmdTbL5KfUDMopx7zZSc8DhWoY4MDBg4C6SNF96UJWneMb"
 			]
 		}
 	},
