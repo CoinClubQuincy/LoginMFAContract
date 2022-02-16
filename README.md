@@ -12,4 +12,5 @@ DApp Login Contract: Allows DApp users to relay credential information to their 
 
 
 ![Login Contract](https://user-images.githubusercontent.com/16103963/152666194-7ca4dfc4-515c-4502-88cf-f02553e91645.png)
-![Login Graph](https://user-images.githubusercontent.com/16103963/152668592-a4b62896-e27c-46ab-ba0d-25b200a2b8e1.png)
+![Login Graph (1)](https://user-images.githubusercontent.com/16103963/154188729-9cdf0e78-2a1c-4e36-8202-ab8856a955d6.png)
+
