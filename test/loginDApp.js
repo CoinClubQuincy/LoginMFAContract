@@ -10,14 +10,17 @@ contract('LoginContract',() => {
         assert(LoginContract.address !== '');
     });
 });
-
+//---------------------------------------------------------------------
 contract('DAppLoginContract',() => {
     it('Deploy Login Contract', async () => {
         const instance = await DAppLoginContract.deployed();
-        //var login = await(instance.userLogin("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","PASS")); 
+        var register = await instance.Register("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10");
+        const login = await(instance.userLogin("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","PASS")); 
         const result = await(instance.CredToken("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","0xd2e8d80eec760da7dd35c7c21256e07f28d822d5")); 
         //LoginContract.address
         console.log(result);
+        console.log(register);
+        console.log(login);
         assert(instance.address !== '');
     });
 });

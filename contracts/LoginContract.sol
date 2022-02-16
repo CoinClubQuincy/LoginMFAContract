@@ -49,9 +49,14 @@ contract DAppLoginContract{
         bool status;
     }
     //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
-    function Register(address _LoginContract)public{
-        logins[_LoginContract] =Logins(true,true);
-        TotalAccounts++;
+    function Register(address _LoginContract)public returns(bool){
+        if(logins[_LoginContract].exist == true){
+            return false;
+        }else{
+            logins[_LoginContract] =Logins(true,true);
+            TotalAccounts++;
+            return true;
+        }
     }
     //Checks Current Users Login Contracts
     function LoginStatus(address _LoginContract) public view returns(bool){
@@ -65,10 +70,11 @@ contract DAppLoginContract{
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public view returns(bool){
+        //require(logins[_LoginContract].exist==true);
         bool Pass = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
-        if( Pass==true &&Creds==true &&logins[_LoginContract].exist==true){
+        if( Pass==true && Creds==true){
             logins[_LoginContract].status==true;
             return true;  //user successfully logs in!
         }else{
