@@ -79,19 +79,15 @@ contract DAppLoginContract{
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public payable returns(string memory){
         require(logins[_LoginContract].exist==true);
-        //bool Password = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
+        bool Password = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
-        if(Creds==true){
+        if(Creds==true && Password==true){
             logins[_LoginContract].status=true;
             return "Login";  //user successfully logs in!
         } else{
             return "Unable to Login"; //User fails to have correct NFT access or incorect password
         }
-    }
-    function test(address _LoginContract,string memory _enterPass)public view returns(bool){
-        bool Password = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
-        return Password;
     }
     //check user
     function CredToken(address _LoginContract,address _user)public view returns(bool){
