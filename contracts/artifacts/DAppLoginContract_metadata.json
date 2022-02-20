@@ -99,30 +99,6 @@
 						"type": "address"
 					},
 					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "userLogin",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_LoginContract",
-						"type": "address"
-					},
-					{
 						"internalType": "string",
 						"name": "_enterPass",
 						"type": "string"
@@ -232,11 +208,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0x994f27f7b98ad3734db9a7671f513c8edf712063a7972d6786958f5697d75f7b",
+			"keccak256": "0x3c67643ec4313e1c70fc1e447ea1d634772744d6ceb38bab151a1a3d062ed575",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1d15ee073b69fdd2f04059a75b1a1e6386c94c68c175e1a93a202c036b3fc8f9",
-				"dweb:/ipfs/QmUcS1FE3Qh4hQ66eb1w5WDs65Cg4dvioF7ZMoXMfLKQKj"
+				"bzz-raw://8933216f2384ea6a5152423aedd49663da236e93a617c44cd5a9c5b8a5f7c1f9",
+				"dweb:/ipfs/QmUCbvFWfwAGBUM2pvsnKWYXzjkyJrDA4br2jXZRHs19KF"
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {

@@ -53,7 +53,6 @@
 			"LoginStatus(address)": "dff0f208",
 			"Logout(address,address)": "362760b5",
 			"Register(address)": "eeda149c",
-			"userLogin(address,address)": "4ce7854f",
 			"userLogin(address,string)": "b3db08bf"
 		}
 	},
@@ -142,30 +141,6 @@
 				}
 			],
 			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_LoginContract",
-					"type": "address"
-				},
-				{
-					"internalType": "address",
-					"name": "_user",
-					"type": "address"
-				}
-			],
-			"name": "userLogin",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "view",
 			"type": "function"
 		},
 		{
