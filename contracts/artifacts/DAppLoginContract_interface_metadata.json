@@ -9,30 +9,16 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
 						"name": "_user",
 						"type": "address"
 					}
 				],
-				"name": "CheckUserCreds",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_enterPass",
-						"type": "string"
-					}
-				],
-				"name": "Login",
+				"name": "DAppLogin",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -57,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Documents/GitHub/LoginContract/contracts/LoginContract.sol": "LoginContract_Interface"
+			"Documents/GitHub/LoginContract/contracts/LoginContract.sol": "DAppLoginContract_interface"
 		},
 		"evmVersion": "london",
 		"libraries": {},

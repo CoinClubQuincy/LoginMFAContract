@@ -44,8 +44,11 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
         }
     }
 }
+interface DAppLoginContract_interface{
+    function DAppLogin(address _LoginContract,address _user)external view returns(bool);
+}
 //DApps can have this contract be the login contract for users to use this application
-contract DAppLoginContract{
+abstract contract DAppLoginContract is DAppLoginContract_interface{
     uint TotalAccounts =0;
     constructor(){}
     
