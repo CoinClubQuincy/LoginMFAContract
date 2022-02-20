@@ -18,7 +18,7 @@
 						"type": "address"
 					}
 				],
-				"name": "DAppLogin",
+				"name": "userLogin",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -122,11 +122,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0x8ef659c54ced83eac5c996f80c728566c1a8bb16f6ff0491454db635524ef49d",
+			"keccak256": "0x994f27f7b98ad3734db9a7671f513c8edf712063a7972d6786958f5697d75f7b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1ce2ca01f86fe92a100a6395090f3ef9393e9fd7511dad46481fc82bb0d1ce97",
-				"dweb:/ipfs/QmNQk37Yn2owGRPQbK4Bm9SyjxVkM56HjDQJDu5nCSx9B2"
+				"bzz-raw://1d15ee073b69fdd2f04059a75b1a1e6386c94c68c175e1a93a202c036b3fc8f9",
+				"dweb:/ipfs/QmUcS1FE3Qh4hQ66eb1w5WDs65Cg4dvioF7ZMoXMfLKQKj"
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {

@@ -50,10 +50,10 @@
 		"gasEstimates": null,
 		"methodIdentifiers": {
 			"CredToken(address,address)": "ba275631",
-			"DAppLogin(address,address)": "2cc062a6",
 			"LoginStatus(address)": "dff0f208",
 			"Logout(address,address)": "362760b5",
 			"Register(address)": "eeda149c",
+			"userLogin(address,address)": "4ce7854f",
 			"userLogin(address,string)": "b3db08bf"
 		}
 	},
@@ -72,30 +72,6 @@
 				}
 			],
 			"name": "CredToken",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_LoginContract",
-					"type": "address"
-				},
-				{
-					"internalType": "address",
-					"name": "_user",
-					"type": "address"
-				}
-			],
-			"name": "DAppLogin",
 			"outputs": [
 				{
 					"internalType": "bool",
@@ -166,6 +142,30 @@
 				}
 			],
 			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_LoginContract",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_user",
+					"type": "address"
+				}
+			],
+			"name": "userLogin",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
 			"type": "function"
 		},
 		{
