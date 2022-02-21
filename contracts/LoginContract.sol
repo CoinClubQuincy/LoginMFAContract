@@ -45,7 +45,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     }
 }
 //DApps can have this contract be the login contract for users to use this application
-abstract contract DAppLoginContract{
+contract DAppLoginContract{
     uint TotalAccounts =0;
     constructor(){}
     
