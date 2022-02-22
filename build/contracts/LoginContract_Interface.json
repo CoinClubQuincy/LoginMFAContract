@@ -40,7 +40,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"CheckUserCreds\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_enterPass\",\"type\":\"string\"}],\"name\":\"Login\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LoginContract.sol\":\"LoginContract_Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\":{\"keccak256\":\"0xbe52adc8ccfd46744b73c19fa294b56f1f0be944c20459591900b1c35f2a1a10\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad9f276304d134fa20370d9d5356472170032268500d426942dc3592f2c975dc\",\"dweb:/ipfs/QmQYn91kSYkSf9gnf5VHgnpmyZ3DcPLUfGHXQXuvMbaxwh\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0xf920acc579a6c2067ca587b8d3993f6e737ac54f2dc3c4cd179d8df0e3f351d9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://900486cb37c3b173462e4d5929a7df08ef91d9ee544176cfa25189f3b556641e\",\"dweb:/ipfs/QmTMbsipusiSnqiUj9wnPjwdzUALoKhmVGRhhcYn36jGJg\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol\":{\"keccak256\":\"0xaca482b8f27dbab77b82282987d50a280c65f6254f3cac64e68ccd61f55e4822\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8d246c370ac1e074a0914bb0ffefddae0b69b051abb88962b4ed402d871311b2\",\"dweb:/ipfs/QmWmHh8LX2D3LP8KeXqjRE2Em4Xf2Ky84UXdtzp6W6ubqA\"]},\"@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":{\"keccak256\":\"0x825f445794b1c04301d3a309e53cfc336ec2bb306164ebe06590edc38d2c24ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://17a14396f1dd8d17b3cf8f7f0b488d90700319d383eb6509e448cf8517901150\",\"dweb:/ipfs/QmUD5P8JYojqtPDitJFByiQAg4zW8VwdA9g7pyikMdJ9Qu\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x9944d1038f27dcebff810d7ba16b3b8058b967173d76874fb72dd7cd84129656\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7c455cda07c5f8978c57e545ddde382552d3a55b6e3682e0f809ed07ec7defbe\",\"dweb:/ipfs/QmXkoKbxyMcMzjYdkXi5t4t3ZjBQ81pj7AaanS9jhePxyt\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4fd625dca17657403af518cc6c8ab5c54c58898cf6e912ca2e1b0f3194ad0405\",\"dweb:/ipfs/QmQVv7YeeKmaS11bg7YDTeeGDk6i7sV8LMMfohaLM4SiRu\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x905cd0ecd91d1de79a4679d745b79cf852ca8ccda5d25d1c49c6bd17a5edc0cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8dd1601fcd370546d8c06ea1902d7e7364fc490fbf0ebc3004230ef1f5db473c\",\"dweb:/ipfs/Qmb8zbC3TjWFtcuyP3KEEaegMkPcfeKAcPrwzvkAoMR3cZ\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x6aa521718bf139b44ce56f194f6aea1d590cacef995b5a84703fb1579fa49be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://100f8d367b5e94eb9cb991914f1de133cf272654c0708faa893bbc17a5b35b93\",\"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT\"]},\"project:/contracts/LoginContract.sol\":{\"keccak256\":\"0x03701beede81d6222962440b98a00b14ed63abe616bda9d340151887888017fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8658c05578750d3b48b1359a7ce5c0158ae8c8a10aef7a0fe032b9d2ab4b6643\",\"dweb:/ipfs/QmUPz37PTJ2hKJssRsLi36UACkKypigVM1gaYnNeFRdTZT\"]},\"project:/contracts/PrivateAccessToken.sol\":{\"keccak256\":\"0x196604f9d18b4bf794c56cefb5704480b4d219521564a3ccad959c4025632fc9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://224f92f5fa1d135ef5766664f158c44999974c13903069870729364c98193684\",\"dweb:/ipfs/QmeiJtuXR16GHm3hkR47pE8wpGft6YSvEfgkMH6yjXMLsN\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"CheckUserCreds\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_enterPass\",\"type\":\"string\"}],\"name\":\"Login\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LoginContract.sol\":\"LoginContract_Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\":{\"keccak256\":\"0xbe52adc8ccfd46744b73c19fa294b56f1f0be944c20459591900b1c35f2a1a10\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad9f276304d134fa20370d9d5356472170032268500d426942dc3592f2c975dc\",\"dweb:/ipfs/QmQYn91kSYkSf9gnf5VHgnpmyZ3DcPLUfGHXQXuvMbaxwh\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0xf920acc579a6c2067ca587b8d3993f6e737ac54f2dc3c4cd179d8df0e3f351d9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://900486cb37c3b173462e4d5929a7df08ef91d9ee544176cfa25189f3b556641e\",\"dweb:/ipfs/QmTMbsipusiSnqiUj9wnPjwdzUALoKhmVGRhhcYn36jGJg\"]},\"@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol\":{\"keccak256\":\"0xaca482b8f27dbab77b82282987d50a280c65f6254f3cac64e68ccd61f55e4822\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8d246c370ac1e074a0914bb0ffefddae0b69b051abb88962b4ed402d871311b2\",\"dweb:/ipfs/QmWmHh8LX2D3LP8KeXqjRE2Em4Xf2Ky84UXdtzp6W6ubqA\"]},\"@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":{\"keccak256\":\"0x825f445794b1c04301d3a309e53cfc336ec2bb306164ebe06590edc38d2c24ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://17a14396f1dd8d17b3cf8f7f0b488d90700319d383eb6509e448cf8517901150\",\"dweb:/ipfs/QmUD5P8JYojqtPDitJFByiQAg4zW8VwdA9g7pyikMdJ9Qu\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x9944d1038f27dcebff810d7ba16b3b8058b967173d76874fb72dd7cd84129656\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7c455cda07c5f8978c57e545ddde382552d3a55b6e3682e0f809ed07ec7defbe\",\"dweb:/ipfs/QmXkoKbxyMcMzjYdkXi5t4t3ZjBQ81pj7AaanS9jhePxyt\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4fd625dca17657403af518cc6c8ab5c54c58898cf6e912ca2e1b0f3194ad0405\",\"dweb:/ipfs/QmQVv7YeeKmaS11bg7YDTeeGDk6i7sV8LMMfohaLM4SiRu\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x905cd0ecd91d1de79a4679d745b79cf852ca8ccda5d25d1c49c6bd17a5edc0cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8dd1601fcd370546d8c06ea1902d7e7364fc490fbf0ebc3004230ef1f5db473c\",\"dweb:/ipfs/Qmb8zbC3TjWFtcuyP3KEEaegMkPcfeKAcPrwzvkAoMR3cZ\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x6aa521718bf139b44ce56f194f6aea1d590cacef995b5a84703fb1579fa49be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://100f8d367b5e94eb9cb991914f1de133cf272654c0708faa893bbc17a5b35b93\",\"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT\"]},\"project:/contracts/LoginContract.sol\":{\"keccak256\":\"0x7c0d68562b73c7af0c44d8494deb3b7e6170620526eb58e76e5abf9f0b07aee0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://66ccac3ed6c2cd30ddcc888ace4a2c6f4fb29be835a8afd30552a9525ce29ecb\",\"dweb:/ipfs/QmNgrjY91QoELRSsB3o4FQtSZaZQS8XMG6ygPCLevM5cvM\"]},\"project:/contracts/PrivateAccessToken.sol\":{\"keccak256\":\"0x196604f9d18b4bf794c56cefb5704480b4d219521564a3ccad959c4025632fc9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://224f92f5fa1d135ef5766664f158c44999974c13903069870729364c98193684\",\"dweb:/ipfs/QmeiJtuXR16GHm3hkR47pE8wpGft6YSvEfgkMH6yjXMLsN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -48,7 +48,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.8.10;\n// SPDX-License-Identifier: MIT\nimport \"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\";\nimport \"./PrivateAccessToken.sol\";\n\n//interface for other contract to read status\ninterface LoginContract_Interface{\n    function Login(string memory _enterPass)external view returns(bool);\n    function CheckUserCreds(address _user)external view returns(bool);\n}\ncontract LoginContract is PrivateAccessToken,LoginContract_Interface{\n    //new token that will allow for a smart contract to check credentials \n    string private Login_Pass;\n    event ContractAddress(address indexed _ContractSelf);\n\n\n    //lauch Login contract with PrivateAccessToken Contract as dependancy\n    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){\n        emit ContractAddress(address(this));\n    }\n\n    //Dapp Contracts can check passwords\n    function Login(string memory _enterPass)external view returns(bool){\n        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){\n            return true;\n        } else{\n            return false;\n        }\n    }\n    //I can grab the OnlyToken modifier from the Inherited contract\n    function User_Login(string memory _enterPass)public view OnlyToken returns(bool){\n        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){\n            return true;\n        } else{\n            return false;\n        }\n    }\n    // external source can check if user data holds correct token\n    function CheckUserCreds(address _user)public view returns(bool){\n        if(PrivateAccessToken.OnlyIf(_user,1) == true){\n            return true;\n        } else {\n            return false;\n        }\n    }\n}\n//DApps can have this contract be the login contract for users to use this application\ncontract DAppLoginContract{\n    uint TotalAccounts =0;\n    constructor(){}\n    \n    mapping(address => Logins) logins;\n    //Keeps list of Login Contracts\n    struct Logins{\n        bool exist;\n        bool status;\n    }\n    //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract\n    function Register(address _LoginContract)public returns(bool){\n        if(logins[_LoginContract].exist == true){\n            return false;\n        }else{\n            logins[_LoginContract] =Logins(true,false);\n            TotalAccounts++;\n            return true;\n        }\n    }\n    //Checks Current Users Login Contracts\n    function LoginStatus(address _LoginContract) public view returns(bool){\n        return logins[_LoginContract].status;\n    }\n    //user Changes Login status\n    function Logout(address _LoginContract,address _user)public payable returns(string memory){\n        require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);\n        logins[_LoginContract].status= false;\n        return \"Logged out\";\n    }\n    //user can login and have DApp check login COntract for validity\n    // contract address & password to login\n    function userLogin(address _LoginContract,string memory _enterPass)public payable returns(string memory){\n        require(logins[_LoginContract].exist==true);\n        bool Password = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token\n        //Check Login Contract and Registration\n        if(Creds==true && Password==true){\n            logins[_LoginContract].status=true;\n            return \"Login\";  //user successfully logs in!\n        } else{\n            return \"Unable to Login\"; //User fails to have correct NFT access or incorect password\n        }\n    }\n    //check user\n    function CredToken(address _LoginContract,address _user)public view returns(bool){\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);\n        return Creds;\n    }\n}\n//- Dev: Quincy J\n",
+  "source": "pragma solidity ^0.8.10;\n// SPDX-License-Identifier: MIT\nimport \"@openzeppelin/contracts/token/ERC1155/ERC1155.sol\";\nimport \"./PrivateAccessToken.sol\";\n\n//interface for other contract to read status\ninterface LoginContract_Interface{\n    function Login(string memory _enterPass)external view returns(bool);\n    function CheckUserCreds(address _user)external view returns(bool);\n}\ncontract LoginContract is PrivateAccessToken,LoginContract_Interface{\n    //new token that will allow for a smart contract to check credentials \n    string private Login_Pass;\n    event ContractAddress(address indexed _ContractSelf);\n\n\n    //lauch Login contract with PrivateAccessToken Contract as dependancy\n    constructor(string memory _Pass ,string memory _URI)PrivateAccessToken(_Pass,_URI){\n        emit ContractAddress(address(this));\n    }\n\n    //Dapp Contracts can check passwords\n    function Login(string memory _enterPass)external view returns(bool){\n        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){\n            return true;\n        } else{\n            return false;\n        }\n    }\n    //I can grab the OnlyToken modifier from the Inherited contract\n    function User_Login(string memory _enterPass)public view OnlyToken returns(bool){\n        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){\n            return true;\n        } else{\n            return false;\n        }\n    }\n    // external source can check if user data holds correct token\n    function CheckUserCreds(address _user)public view returns(bool){\n        if(PrivateAccessToken.OnlyIf(_user,1) == true){\n            return true;\n        } else {\n            return false;\n        }\n    }\n}\n//DApps can have this contract be the login contract for users to use this application\ncontract DAppLoginContract{\n    uint TotalAccounts =0;\n    constructor(){}\n    \n    mapping(address => Logins) logins;\n    //Keeps list of Login Contracts\n    struct Logins{\n        bool exist;\n        bool status;\n    }\n    //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract\n    function Register(address _LoginContract)public returns(bool){\n        if(logins[_LoginContract].exist == true){\n            return false;\n        }else{\n            logins[_LoginContract] =Logins(true,false);\n            TotalAccounts++;\n            return true;\n        }\n    }\n    //Checks Current Users Login Contracts\n    function LoginStatus(address _LoginContract) public view returns(bool){\n        return logins[_LoginContract].status;\n    }\n    //user Changes Login status\n    function Logout(address _LoginContract,address _user)public payable returns(string memory){\n        require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);\n        logins[_LoginContract].status= false;\n        return \"Logged out\";\n    }\n    //user can login and have DApp check login COntract for validity\n    // contract address & password to login\n    function userLogin(address _LoginContract,string memory _enterPass)public payable returns(string memory){\n        require(logins[_LoginContract].exist==true);\n        address _self = msg.sender;\n        bool Password = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_self); //Has correct Credential Token\n        //Check Login Contract and Registration\n        if(Creds==true && Password==true){\n            logins[_LoginContract].status=true;\n            return \"Login\";  //user successfully logs in!\n        } else{\n            return \"Unable to Login\"; //User fails to have correct NFT access or incorect password\n        }\n    }\n    //check user\n    function CredToken(address _LoginContract,address _user)public view returns(bool){\n        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);\n        return Creds;\n    }\n}\n//- Dev: Quincy J\n",
   "sourcePath": "/Users/Q/Documents/GitHub/LoginContract/contracts/LoginContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/LoginContract.sol",
@@ -60,7 +60,7 @@
         1592
       ],
       "DAppLoginContract": [
-        1933
+        1937
       ],
       "ERC1155": [
         1095
@@ -87,10 +87,10 @@
         1647
       ],
       "PrivateAccessToken": [
-        2079
+        2083
       ]
     },
-    "id": 1934,
+    "id": 1938,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -111,7 +111,7 @@
         "id": 1631,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1934,
+        "scope": 1938,
         "sourceUnit": 1096,
         "src": "57:59:8",
         "symbolAliases": [],
@@ -123,8 +123,8 @@
         "id": 1632,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1934,
-        "sourceUnit": 2080,
+        "scope": 1938,
+        "sourceUnit": 2084,
         "src": "117:34:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -312,7 +312,7 @@
             "visibility": "external"
           }
         ],
-        "scope": 1934,
+        "scope": 1938,
         "src": "199:180:8",
         "usedErrors": []
       },
@@ -324,7 +324,7 @@
               "id": 1648,
               "name": "PrivateAccessToken",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2079,
+              "referencedDeclaration": 2083,
               "src": "406:18:8"
             },
             "id": 1649,
@@ -352,7 +352,7 @@
         "linearizedBaseContracts": [
           1759,
           1647,
-          2079,
+          2083,
           1095,
           1273,
           1217,
@@ -577,7 +577,7 @@
                   "id": 1663,
                   "name": "PrivateAccessToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 2079,
+                  "referencedDeclaration": 2083,
                   "src": "746:18:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -692,7 +692,7 @@
                                 "name": "ViewData",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2030,
+                                "referencedDeclaration": 2034,
                                 "src": "982:8:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
@@ -1077,7 +1077,7 @@
                                 "name": "ViewData",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2030,
+                                "referencedDeclaration": 2034,
                                 "src": "1315:8:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
@@ -1363,7 +1363,7 @@
                   "id": 1709,
                   "name": "OnlyToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1983,
+                  "referencedDeclaration": 1987,
                   "src": "1252:9:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -1514,10 +1514,10 @@
                           "name": "PrivateAccessToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2079,
+                          "referencedDeclaration": 2083,
                           "src": "1602:18:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$2079_$",
+                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$2083_$",
                             "typeString": "type(contract PrivateAccessToken)"
                           }
                         },
@@ -1528,7 +1528,7 @@
                         "lValueRequested": false,
                         "memberName": "OnlyIf",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2020,
+                        "referencedDeclaration": 2024,
                         "src": "1602:25:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -1722,7 +1722,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 1934,
+        "scope": 1938,
         "src": "380:1352:8",
         "usedErrors": []
       },
@@ -1733,9 +1733,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 1933,
+        "id": 1937,
         "linearizedBaseContracts": [
-          1933
+          1937
         ],
         "name": "DAppLoginContract",
         "nameLocation": "1829:17:8",
@@ -1748,7 +1748,7 @@
             "name": "TotalAccounts",
             "nameLocation": "1857:13:8",
             "nodeType": "VariableDeclaration",
-            "scope": 1933,
+            "scope": 1937,
             "src": "1852:21:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1810,7 +1810,7 @@
               "parameters": [],
               "src": "1892:0:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "1879:15:8",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1823,7 +1823,7 @@
             "name": "logins",
             "nameLocation": "1931:6:8",
             "nodeType": "VariableDeclaration",
-            "scope": 1933,
+            "scope": 1937,
             "src": "1904:33:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1931,7 +1931,7 @@
             "name": "Logins",
             "nameLocation": "1986:6:8",
             "nodeType": "StructDefinition",
-            "scope": 1933,
+            "scope": 1937,
             "src": "1979:61:8",
             "visibility": "public"
           },
@@ -2329,7 +2329,7 @@
               ],
               "src": "2228:6:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "2173:279:8",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -2478,7 +2478,7 @@
               ],
               "src": "2564:6:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "2500:123:8",
             "stateMutability": "view",
             "virtual": false,
@@ -2883,7 +2883,7 @@
               ],
               "src": "2735:15:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "2660:260:8",
             "stateMutability": "payable",
             "virtual": false,
@@ -2891,9 +2891,9 @@
           },
           {
             "body": {
-              "id": 1910,
+              "id": 1914,
               "nodeType": "Block",
-              "src": "3142:609:8",
+              "src": "3142:640:8",
               "statements": [
                 {
                   "expression": {
@@ -3034,11 +3034,75 @@
                       "constant": false,
                       "id": 1871,
                       "mutability": "mutable",
-                      "name": "Password",
-                      "nameLocation": "3210:8:8",
+                      "name": "_self",
+                      "nameLocation": "3213:5:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1910,
+                      "scope": 1914,
                       "src": "3205:13:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 1870,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "3205:7:8",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1874,
+                  "initialValue": {
+                    "expression": {
+                      "id": 1872,
+                      "name": "msg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4294967281,
+                      "src": "3221:3:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_message",
+                        "typeString": "msg"
+                      }
+                    },
+                    "id": 1873,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "sender",
+                    "nodeType": "MemberAccess",
+                    "src": "3221:10:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3205:26:8"
+                },
+                {
+                  "assignments": [
+                    1876
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1876,
+                      "mutability": "mutable",
+                      "name": "Password",
+                      "nameLocation": "3246:8:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1914,
+                      "src": "3241:13:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3046,10 +3110,10 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1870,
+                        "id": 1875,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "3205:4:8",
+                        "src": "3241:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3058,16 +3122,16 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1878,
+                  "id": 1883,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 1876,
+                        "id": 1881,
                         "name": "_enterPass",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1856,
-                        "src": "3267:10:8",
+                        "src": "3303:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
                           "typeString": "string memory"
@@ -3084,12 +3148,12 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1873,
+                            "id": 1878,
                             "name": "_LoginContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1854,
-                            "src": "3245:14:8",
+                            "src": "3281:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -3103,18 +3167,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1872,
+                          "id": 1877,
                           "name": "LoginContract_Interface",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "3221:23:8",
+                          "src": "3257:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
                           }
                         },
-                        "id": 1874,
+                        "id": 1879,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3122,14 +3186,14 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3221:39:8",
+                        "src": "3257:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
                           "typeString": "contract LoginContract_Interface"
                         }
                       },
-                      "id": 1875,
+                      "id": 1880,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3137,13 +3201,13 @@
                       "memberName": "Login",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1639,
-                      "src": "3221:45:8",
+                      "src": "3257:45:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_string_memory_ptr_$returns$_t_bool_$",
                         "typeString": "function (string memory) view external returns (bool)"
                       }
                     },
-                    "id": 1877,
+                    "id": 1882,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3151,7 +3215,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3221:57:8",
+                    "src": "3257:57:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -3159,22 +3223,22 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "3205:73:8"
+                  "src": "3241:73:8"
                 },
                 {
                   "assignments": [
-                    1880
+                    1885
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1880,
+                      "id": 1885,
                       "mutability": "mutable",
                       "name": "Creds",
-                      "nameLocation": "3317:5:8",
+                      "nameLocation": "3353:5:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1910,
-                      "src": "3312:10:8",
+                      "scope": 1914,
+                      "src": "3348:10:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3182,10 +3246,10 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1879,
+                        "id": 1884,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "3312:4:8",
+                        "src": "3348:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3194,30 +3258,16 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1888,
+                  "id": 1892,
                   "initialValue": {
                     "arguments": [
                       {
-                        "expression": {
-                          "id": 1885,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 4294967281,
-                          "src": "3380:3:8",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
-                          }
-                        },
-                        "id": 1886,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "sender",
-                        "nodeType": "MemberAccess",
-                        "src": "3380:10:8",
+                        "id": 1890,
+                        "name": "_self",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1871,
+                        "src": "3416:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -3234,12 +3284,12 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1882,
+                            "id": 1887,
                             "name": "_LoginContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1854,
-                            "src": "3349:14:8",
+                            "src": "3385:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -3253,18 +3303,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1881,
+                          "id": 1886,
                           "name": "LoginContract_Interface",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "3325:23:8",
+                          "src": "3361:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
                           }
                         },
-                        "id": 1883,
+                        "id": 1888,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3272,14 +3322,14 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3325:39:8",
+                        "src": "3361:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
                           "typeString": "contract LoginContract_Interface"
                         }
                       },
-                      "id": 1884,
+                      "id": 1889,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3287,13 +3337,13 @@
                       "memberName": "CheckUserCreds",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1646,
-                      "src": "3325:54:8",
+                      "src": "3361:54:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view external returns (bool)"
                       }
                     },
-                    "id": 1887,
+                    "id": 1891,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3301,7 +3351,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3325:66:8",
+                    "src": "3361:61:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -3309,7 +3359,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "3312:79:8"
+                  "src": "3348:74:8"
                 },
                 {
                   "condition": {
@@ -3317,7 +3367,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 1895,
+                    "id": 1899,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3327,18 +3377,18 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 1891,
+                      "id": 1895,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 1889,
+                        "id": 1893,
                         "name": "Creds",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1880,
-                        "src": "3483:5:8",
+                        "referencedDeclaration": 1885,
+                        "src": "3514:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3348,21 +3398,21 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "74727565",
-                        "id": 1890,
+                        "id": 1894,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "3490:4:8",
+                        "src": "3521:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
                         "value": "true"
                       },
-                      "src": "3483:11:8",
+                      "src": "3514:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -3375,18 +3425,18 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 1894,
+                      "id": 1898,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 1892,
+                        "id": 1896,
                         "name": "Password",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1871,
-                        "src": "3498:8:8",
+                        "referencedDeclaration": 1876,
+                        "src": "3529:8:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3396,48 +3446,48 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "74727565",
-                        "id": 1893,
+                        "id": 1897,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "3508:4:8",
+                        "src": "3539:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
                         "value": "true"
                       },
-                      "src": "3498:14:8",
+                      "src": "3529:14:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "3483:29:8",
+                    "src": "3514:29:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 1908,
+                    "id": 1912,
                     "nodeType": "Block",
-                    "src": "3635:110:8",
+                    "src": "3666:110:8",
                     "statements": [
                       {
                         "expression": {
                           "hexValue": "556e61626c6520746f204c6f67696e",
-                          "id": 1906,
+                          "id": 1910,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "3656:17:8",
+                          "src": "3687:17:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_1c1680277c61268bff2c67914193ca77adf6d611481e5823afb30445d1f83117",
                             "typeString": "literal_string \"Unable to Login\""
@@ -3445,23 +3495,23 @@
                           "value": "Unable to Login"
                         },
                         "functionReturnParameters": 1860,
-                        "id": 1907,
+                        "id": 1911,
                         "nodeType": "Return",
-                        "src": "3649:24:8"
+                        "src": "3680:24:8"
                       }
                     ]
                   },
-                  "id": 1909,
+                  "id": 1913,
                   "nodeType": "IfStatement",
-                  "src": "3480:265:8",
+                  "src": "3511:265:8",
                   "trueBody": {
-                    "id": 1905,
+                    "id": 1909,
                     "nodeType": "Block",
-                    "src": "3513:117:8",
+                    "src": "3544:117:8",
                     "statements": [
                       {
                         "expression": {
-                          "id": 1901,
+                          "id": 1905,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3469,25 +3519,25 @@
                           "leftHandSide": {
                             "expression": {
                               "baseExpression": {
-                                "id": 1896,
+                                "id": 1900,
                                 "name": "logins",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 1771,
-                                "src": "3527:6:8",
+                                "src": "3558:6:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Logins_$1776_storage_$",
                                   "typeString": "mapping(address => struct DAppLoginContract.Logins storage ref)"
                                 }
                               },
-                              "id": 1898,
+                              "id": 1902,
                               "indexExpression": {
-                                "id": 1897,
+                                "id": 1901,
                                 "name": "_LoginContract",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 1854,
-                                "src": "3534:14:8",
+                                "src": "3565:14:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
                                   "typeString": "address"
@@ -3498,13 +3548,13 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "3527:22:8",
+                              "src": "3558:22:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Logins_$1776_storage",
                                 "typeString": "struct DAppLoginContract.Logins storage ref"
                               }
                             },
-                            "id": 1899,
+                            "id": 1903,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
@@ -3512,7 +3562,7 @@
                             "memberName": "status",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 1775,
-                            "src": "3527:29:8",
+                            "src": "3558:29:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
@@ -3522,41 +3572,41 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "74727565",
-                            "id": 1900,
+                            "id": 1904,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "bool",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "3557:4:8",
+                            "src": "3588:4:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
                             },
                             "value": "true"
                           },
-                          "src": "3527:34:8",
+                          "src": "3558:34:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 1902,
+                        "id": 1906,
                         "nodeType": "ExpressionStatement",
-                        "src": "3527:34:8"
+                        "src": "3558:34:8"
                       },
                       {
                         "expression": {
                           "hexValue": "4c6f67696e",
-                          "id": 1903,
+                          "id": 1907,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "3582:7:8",
+                          "src": "3613:7:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_3718ef47dcfccaa4267e1e997bf5e353b46a1c40e0ad6988b4bc14dd8ffa2e08",
                             "typeString": "literal_string \"Login\""
@@ -3564,9 +3614,9 @@
                           "value": "Login"
                         },
                         "functionReturnParameters": 1860,
-                        "id": 1904,
+                        "id": 1908,
                         "nodeType": "Return",
-                        "src": "3575:14:8"
+                        "src": "3606:14:8"
                       }
                     ]
                   }
@@ -3574,7 +3624,7 @@
               ]
             },
             "functionSelector": "b3db08bf",
-            "id": 1911,
+            "id": 1915,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3592,7 +3642,7 @@
                   "name": "_LoginContract",
                   "nameLocation": "3065:14:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1911,
+                  "scope": 1915,
                   "src": "3057:22:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3620,7 +3670,7 @@
                   "name": "_enterPass",
                   "nameLocation": "3094:10:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1911,
+                  "scope": 1915,
                   "src": "3080:24:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3654,7 +3704,7 @@
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1911,
+                  "scope": 1915,
                   "src": "3128:13:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3677,32 +3727,32 @@
               ],
               "src": "3127:15:8"
             },
-            "scope": 1933,
-            "src": "3038:713:8",
+            "scope": 1937,
+            "src": "3038:744:8",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1931,
+              "id": 1935,
               "nodeType": "Block",
-              "src": "3854:113:8",
+              "src": "3885:113:8",
               "statements": [
                 {
                   "assignments": [
-                    1921
+                    1925
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1921,
+                      "id": 1925,
                       "mutability": "mutable",
                       "name": "Creds",
-                      "nameLocation": "3869:5:8",
+                      "nameLocation": "3900:5:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1931,
-                      "src": "3864:10:8",
+                      "scope": 1935,
+                      "src": "3895:10:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3710,10 +3760,10 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1920,
+                        "id": 1924,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "3864:4:8",
+                        "src": "3895:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3722,16 +3772,16 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1928,
+                  "id": 1932,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 1926,
+                        "id": 1930,
                         "name": "_user",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1915,
-                        "src": "3932:5:8",
+                        "referencedDeclaration": 1919,
+                        "src": "3963:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -3748,12 +3798,12 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1923,
+                            "id": 1927,
                             "name": "_LoginContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1913,
-                            "src": "3901:14:8",
+                            "referencedDeclaration": 1917,
+                            "src": "3932:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -3767,18 +3817,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1922,
+                          "id": 1926,
                           "name": "LoginContract_Interface",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "3877:23:8",
+                          "src": "3908:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
                           }
                         },
-                        "id": 1924,
+                        "id": 1928,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3786,14 +3836,14 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3877:39:8",
+                        "src": "3908:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
                           "typeString": "contract LoginContract_Interface"
                         }
                       },
-                      "id": 1925,
+                      "id": 1929,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3801,13 +3851,13 @@
                       "memberName": "CheckUserCreds",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1646,
-                      "src": "3877:54:8",
+                      "src": "3908:54:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view external returns (bool)"
                       }
                     },
-                    "id": 1927,
+                    "id": 1931,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3815,7 +3865,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3877:61:8",
+                    "src": "3908:61:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -3823,49 +3873,49 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "3864:74:8"
+                  "src": "3895:74:8"
                 },
                 {
                   "expression": {
-                    "id": 1929,
+                    "id": 1933,
                     "name": "Creds",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1921,
-                    "src": "3955:5:8",
+                    "referencedDeclaration": 1925,
+                    "src": "3986:5:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1919,
-                  "id": 1930,
+                  "functionReturnParameters": 1923,
+                  "id": 1934,
                   "nodeType": "Return",
-                  "src": "3948:12:8"
+                  "src": "3979:12:8"
                 }
               ]
             },
             "functionSelector": "ba275631",
-            "id": 1932,
+            "id": 1936,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "CredToken",
-            "nameLocation": "3782:9:8",
+            "nameLocation": "3813:9:8",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1916,
+              "id": 1920,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1913,
+                  "id": 1917,
                   "mutability": "mutable",
                   "name": "_LoginContract",
-                  "nameLocation": "3800:14:8",
+                  "nameLocation": "3831:14:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1932,
-                  "src": "3792:22:8",
+                  "scope": 1936,
+                  "src": "3823:22:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3873,10 +3923,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1912,
+                    "id": 1916,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3792:7:8",
+                    "src": "3823:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3887,13 +3937,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1915,
+                  "id": 1919,
                   "mutability": "mutable",
                   "name": "_user",
-                  "nameLocation": "3823:5:8",
+                  "nameLocation": "3854:5:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1932,
-                  "src": "3815:13:8",
+                  "scope": 1936,
+                  "src": "3846:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3901,10 +3951,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1914,
+                    "id": 1918,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3815:7:8",
+                    "src": "3846:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3914,21 +3964,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3791:38:8"
+              "src": "3822:38:8"
             },
             "returnParameters": {
-              "id": 1919,
+              "id": 1923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1918,
+                  "id": 1922,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1932,
-                  "src": "3849:4:8",
+                  "scope": 1936,
+                  "src": "3880:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3936,10 +3986,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1917,
+                    "id": 1921,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3849:4:8",
+                    "src": "3880:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -3948,21 +3998,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3848:6:8"
+              "src": "3879:6:8"
             },
-            "scope": 1933,
-            "src": "3773:194:8",
+            "scope": 1937,
+            "src": "3804:194:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1934,
-        "src": "1820:2149:8",
+        "scope": 1938,
+        "src": "1820:2180:8",
         "usedErrors": []
       }
     ],
-    "src": "0:3988:8"
+    "src": "0:4019:8"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/LoginContract.sol",
@@ -3974,7 +4024,7 @@
         1592
       ],
       "DAppLoginContract": [
-        1933
+        1937
       ],
       "ERC1155": [
         1095
@@ -4001,10 +4051,10 @@
         1647
       ],
       "PrivateAccessToken": [
-        2079
+        2083
       ]
     },
-    "id": 1934,
+    "id": 1938,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -4025,7 +4075,7 @@
         "id": 1631,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1934,
+        "scope": 1938,
         "sourceUnit": 1096,
         "src": "57:59:8",
         "symbolAliases": [],
@@ -4037,8 +4087,8 @@
         "id": 1632,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1934,
-        "sourceUnit": 2080,
+        "scope": 1938,
+        "sourceUnit": 2084,
         "src": "117:34:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4226,7 +4276,7 @@
             "visibility": "external"
           }
         ],
-        "scope": 1934,
+        "scope": 1938,
         "src": "199:180:8",
         "usedErrors": []
       },
@@ -4238,7 +4288,7 @@
               "id": 1648,
               "name": "PrivateAccessToken",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2079,
+              "referencedDeclaration": 2083,
               "src": "406:18:8"
             },
             "id": 1649,
@@ -4266,7 +4316,7 @@
         "linearizedBaseContracts": [
           1759,
           1647,
-          2079,
+          2083,
           1095,
           1273,
           1217,
@@ -4491,7 +4541,7 @@
                   "id": 1663,
                   "name": "PrivateAccessToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 2079,
+                  "referencedDeclaration": 2083,
                   "src": "746:18:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -4606,7 +4656,7 @@
                                 "name": "ViewData",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2030,
+                                "referencedDeclaration": 2034,
                                 "src": "982:8:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
@@ -4991,7 +5041,7 @@
                                 "name": "ViewData",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2030,
+                                "referencedDeclaration": 2034,
                                 "src": "1315:8:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
@@ -5277,7 +5327,7 @@
                   "id": 1709,
                   "name": "OnlyToken",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1983,
+                  "referencedDeclaration": 1987,
                   "src": "1252:9:8"
                 },
                 "nodeType": "ModifierInvocation",
@@ -5428,10 +5478,10 @@
                           "name": "PrivateAccessToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2079,
+                          "referencedDeclaration": 2083,
                           "src": "1602:18:8",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$2079_$",
+                            "typeIdentifier": "t_type$_t_contract$_PrivateAccessToken_$2083_$",
                             "typeString": "type(contract PrivateAccessToken)"
                           }
                         },
@@ -5442,7 +5492,7 @@
                         "lValueRequested": false,
                         "memberName": "OnlyIf",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2020,
+                        "referencedDeclaration": 2024,
                         "src": "1602:25:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -5636,7 +5686,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 1934,
+        "scope": 1938,
         "src": "380:1352:8",
         "usedErrors": []
       },
@@ -5647,9 +5697,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 1933,
+        "id": 1937,
         "linearizedBaseContracts": [
-          1933
+          1937
         ],
         "name": "DAppLoginContract",
         "nameLocation": "1829:17:8",
@@ -5662,7 +5712,7 @@
             "name": "TotalAccounts",
             "nameLocation": "1857:13:8",
             "nodeType": "VariableDeclaration",
-            "scope": 1933,
+            "scope": 1937,
             "src": "1852:21:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -5724,7 +5774,7 @@
               "parameters": [],
               "src": "1892:0:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "1879:15:8",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5737,7 +5787,7 @@
             "name": "logins",
             "nameLocation": "1931:6:8",
             "nodeType": "VariableDeclaration",
-            "scope": 1933,
+            "scope": 1937,
             "src": "1904:33:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -5845,7 +5895,7 @@
             "name": "Logins",
             "nameLocation": "1986:6:8",
             "nodeType": "StructDefinition",
-            "scope": 1933,
+            "scope": 1937,
             "src": "1979:61:8",
             "visibility": "public"
           },
@@ -6243,7 +6293,7 @@
               ],
               "src": "2228:6:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "2173:279:8",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -6392,7 +6442,7 @@
               ],
               "src": "2564:6:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "2500:123:8",
             "stateMutability": "view",
             "virtual": false,
@@ -6797,7 +6847,7 @@
               ],
               "src": "2735:15:8"
             },
-            "scope": 1933,
+            "scope": 1937,
             "src": "2660:260:8",
             "stateMutability": "payable",
             "virtual": false,
@@ -6805,9 +6855,9 @@
           },
           {
             "body": {
-              "id": 1910,
+              "id": 1914,
               "nodeType": "Block",
-              "src": "3142:609:8",
+              "src": "3142:640:8",
               "statements": [
                 {
                   "expression": {
@@ -6948,11 +6998,75 @@
                       "constant": false,
                       "id": 1871,
                       "mutability": "mutable",
-                      "name": "Password",
-                      "nameLocation": "3210:8:8",
+                      "name": "_self",
+                      "nameLocation": "3213:5:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1910,
+                      "scope": 1914,
                       "src": "3205:13:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 1870,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "3205:7:8",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1874,
+                  "initialValue": {
+                    "expression": {
+                      "id": 1872,
+                      "name": "msg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4294967281,
+                      "src": "3221:3:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_message",
+                        "typeString": "msg"
+                      }
+                    },
+                    "id": 1873,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "sender",
+                    "nodeType": "MemberAccess",
+                    "src": "3221:10:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3205:26:8"
+                },
+                {
+                  "assignments": [
+                    1876
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1876,
+                      "mutability": "mutable",
+                      "name": "Password",
+                      "nameLocation": "3246:8:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1914,
+                      "src": "3241:13:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -6960,10 +7074,10 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1870,
+                        "id": 1875,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "3205:4:8",
+                        "src": "3241:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -6972,16 +7086,16 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1878,
+                  "id": 1883,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 1876,
+                        "id": 1881,
                         "name": "_enterPass",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1856,
-                        "src": "3267:10:8",
+                        "src": "3303:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
                           "typeString": "string memory"
@@ -6998,12 +7112,12 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1873,
+                            "id": 1878,
                             "name": "_LoginContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1854,
-                            "src": "3245:14:8",
+                            "src": "3281:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -7017,18 +7131,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1872,
+                          "id": 1877,
                           "name": "LoginContract_Interface",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "3221:23:8",
+                          "src": "3257:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
                           }
                         },
-                        "id": 1874,
+                        "id": 1879,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -7036,14 +7150,14 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3221:39:8",
+                        "src": "3257:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
                           "typeString": "contract LoginContract_Interface"
                         }
                       },
-                      "id": 1875,
+                      "id": 1880,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -7051,13 +7165,13 @@
                       "memberName": "Login",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1639,
-                      "src": "3221:45:8",
+                      "src": "3257:45:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_string_memory_ptr_$returns$_t_bool_$",
                         "typeString": "function (string memory) view external returns (bool)"
                       }
                     },
-                    "id": 1877,
+                    "id": 1882,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7065,7 +7179,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3221:57:8",
+                    "src": "3257:57:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -7073,22 +7187,22 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "3205:73:8"
+                  "src": "3241:73:8"
                 },
                 {
                   "assignments": [
-                    1880
+                    1885
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1880,
+                      "id": 1885,
                       "mutability": "mutable",
                       "name": "Creds",
-                      "nameLocation": "3317:5:8",
+                      "nameLocation": "3353:5:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1910,
-                      "src": "3312:10:8",
+                      "scope": 1914,
+                      "src": "3348:10:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -7096,10 +7210,10 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1879,
+                        "id": 1884,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "3312:4:8",
+                        "src": "3348:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -7108,30 +7222,16 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1888,
+                  "id": 1892,
                   "initialValue": {
                     "arguments": [
                       {
-                        "expression": {
-                          "id": 1885,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 4294967281,
-                          "src": "3380:3:8",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
-                          }
-                        },
-                        "id": 1886,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "sender",
-                        "nodeType": "MemberAccess",
-                        "src": "3380:10:8",
+                        "id": 1890,
+                        "name": "_self",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1871,
+                        "src": "3416:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -7148,12 +7248,12 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1882,
+                            "id": 1887,
                             "name": "_LoginContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1854,
-                            "src": "3349:14:8",
+                            "src": "3385:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -7167,18 +7267,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1881,
+                          "id": 1886,
                           "name": "LoginContract_Interface",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "3325:23:8",
+                          "src": "3361:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
                           }
                         },
-                        "id": 1883,
+                        "id": 1888,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -7186,14 +7286,14 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3325:39:8",
+                        "src": "3361:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
                           "typeString": "contract LoginContract_Interface"
                         }
                       },
-                      "id": 1884,
+                      "id": 1889,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -7201,13 +7301,13 @@
                       "memberName": "CheckUserCreds",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1646,
-                      "src": "3325:54:8",
+                      "src": "3361:54:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view external returns (bool)"
                       }
                     },
-                    "id": 1887,
+                    "id": 1891,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7215,7 +7315,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3325:66:8",
+                    "src": "3361:61:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -7223,7 +7323,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "3312:79:8"
+                  "src": "3348:74:8"
                 },
                 {
                   "condition": {
@@ -7231,7 +7331,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 1895,
+                    "id": 1899,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7241,18 +7341,18 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 1891,
+                      "id": 1895,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 1889,
+                        "id": 1893,
                         "name": "Creds",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1880,
-                        "src": "3483:5:8",
+                        "referencedDeclaration": 1885,
+                        "src": "3514:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -7262,21 +7362,21 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "74727565",
-                        "id": 1890,
+                        "id": 1894,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "3490:4:8",
+                        "src": "3521:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
                         "value": "true"
                       },
-                      "src": "3483:11:8",
+                      "src": "3514:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -7289,18 +7389,18 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 1894,
+                      "id": 1898,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 1892,
+                        "id": 1896,
                         "name": "Password",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1871,
-                        "src": "3498:8:8",
+                        "referencedDeclaration": 1876,
+                        "src": "3529:8:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -7310,48 +7410,48 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "74727565",
-                        "id": 1893,
+                        "id": 1897,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "bool",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "3508:4:8",
+                        "src": "3539:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
                         "value": "true"
                       },
-                      "src": "3498:14:8",
+                      "src": "3529:14:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "3483:29:8",
+                    "src": "3514:29:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 1908,
+                    "id": 1912,
                     "nodeType": "Block",
-                    "src": "3635:110:8",
+                    "src": "3666:110:8",
                     "statements": [
                       {
                         "expression": {
                           "hexValue": "556e61626c6520746f204c6f67696e",
-                          "id": 1906,
+                          "id": 1910,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "3656:17:8",
+                          "src": "3687:17:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_1c1680277c61268bff2c67914193ca77adf6d611481e5823afb30445d1f83117",
                             "typeString": "literal_string \"Unable to Login\""
@@ -7359,23 +7459,23 @@
                           "value": "Unable to Login"
                         },
                         "functionReturnParameters": 1860,
-                        "id": 1907,
+                        "id": 1911,
                         "nodeType": "Return",
-                        "src": "3649:24:8"
+                        "src": "3680:24:8"
                       }
                     ]
                   },
-                  "id": 1909,
+                  "id": 1913,
                   "nodeType": "IfStatement",
-                  "src": "3480:265:8",
+                  "src": "3511:265:8",
                   "trueBody": {
-                    "id": 1905,
+                    "id": 1909,
                     "nodeType": "Block",
-                    "src": "3513:117:8",
+                    "src": "3544:117:8",
                     "statements": [
                       {
                         "expression": {
-                          "id": 1901,
+                          "id": 1905,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -7383,25 +7483,25 @@
                           "leftHandSide": {
                             "expression": {
                               "baseExpression": {
-                                "id": 1896,
+                                "id": 1900,
                                 "name": "logins",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 1771,
-                                "src": "3527:6:8",
+                                "src": "3558:6:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Logins_$1776_storage_$",
                                   "typeString": "mapping(address => struct DAppLoginContract.Logins storage ref)"
                                 }
                               },
-                              "id": 1898,
+                              "id": 1902,
                               "indexExpression": {
-                                "id": 1897,
+                                "id": 1901,
                                 "name": "_LoginContract",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 1854,
-                                "src": "3534:14:8",
+                                "src": "3565:14:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
                                   "typeString": "address"
@@ -7412,13 +7512,13 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "3527:22:8",
+                              "src": "3558:22:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Logins_$1776_storage",
                                 "typeString": "struct DAppLoginContract.Logins storage ref"
                               }
                             },
-                            "id": 1899,
+                            "id": 1903,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
@@ -7426,7 +7526,7 @@
                             "memberName": "status",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 1775,
-                            "src": "3527:29:8",
+                            "src": "3558:29:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
@@ -7436,41 +7536,41 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "74727565",
-                            "id": 1900,
+                            "id": 1904,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "bool",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "3557:4:8",
+                            "src": "3588:4:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
                             },
                             "value": "true"
                           },
-                          "src": "3527:34:8",
+                          "src": "3558:34:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 1902,
+                        "id": 1906,
                         "nodeType": "ExpressionStatement",
-                        "src": "3527:34:8"
+                        "src": "3558:34:8"
                       },
                       {
                         "expression": {
                           "hexValue": "4c6f67696e",
-                          "id": 1903,
+                          "id": 1907,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "string",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "3582:7:8",
+                          "src": "3613:7:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_stringliteral_3718ef47dcfccaa4267e1e997bf5e353b46a1c40e0ad6988b4bc14dd8ffa2e08",
                             "typeString": "literal_string \"Login\""
@@ -7478,9 +7578,9 @@
                           "value": "Login"
                         },
                         "functionReturnParameters": 1860,
-                        "id": 1904,
+                        "id": 1908,
                         "nodeType": "Return",
-                        "src": "3575:14:8"
+                        "src": "3606:14:8"
                       }
                     ]
                   }
@@ -7488,7 +7588,7 @@
               ]
             },
             "functionSelector": "b3db08bf",
-            "id": 1911,
+            "id": 1915,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -7506,7 +7606,7 @@
                   "name": "_LoginContract",
                   "nameLocation": "3065:14:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1911,
+                  "scope": 1915,
                   "src": "3057:22:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7534,7 +7634,7 @@
                   "name": "_enterPass",
                   "nameLocation": "3094:10:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1911,
+                  "scope": 1915,
                   "src": "3080:24:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7568,7 +7668,7 @@
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1911,
+                  "scope": 1915,
                   "src": "3128:13:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7591,32 +7691,32 @@
               ],
               "src": "3127:15:8"
             },
-            "scope": 1933,
-            "src": "3038:713:8",
+            "scope": 1937,
+            "src": "3038:744:8",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1931,
+              "id": 1935,
               "nodeType": "Block",
-              "src": "3854:113:8",
+              "src": "3885:113:8",
               "statements": [
                 {
                   "assignments": [
-                    1921
+                    1925
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1921,
+                      "id": 1925,
                       "mutability": "mutable",
                       "name": "Creds",
-                      "nameLocation": "3869:5:8",
+                      "nameLocation": "3900:5:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1931,
-                      "src": "3864:10:8",
+                      "scope": 1935,
+                      "src": "3895:10:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -7624,10 +7724,10 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1920,
+                        "id": 1924,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
-                        "src": "3864:4:8",
+                        "src": "3895:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -7636,16 +7736,16 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1928,
+                  "id": 1932,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 1926,
+                        "id": 1930,
                         "name": "_user",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1915,
-                        "src": "3932:5:8",
+                        "referencedDeclaration": 1919,
+                        "src": "3963:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -7662,12 +7762,12 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1923,
+                            "id": 1927,
                             "name": "_LoginContract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1913,
-                            "src": "3901:14:8",
+                            "referencedDeclaration": 1917,
+                            "src": "3932:14:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -7681,18 +7781,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1922,
+                          "id": 1926,
                           "name": "LoginContract_Interface",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1647,
-                          "src": "3877:23:8",
+                          "src": "3908:23:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_contract$_LoginContract_Interface_$1647_$",
                             "typeString": "type(contract LoginContract_Interface)"
                           }
                         },
-                        "id": 1924,
+                        "id": 1928,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -7700,14 +7800,14 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3877:39:8",
+                        "src": "3908:39:8",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_LoginContract_Interface_$1647",
                           "typeString": "contract LoginContract_Interface"
                         }
                       },
-                      "id": 1925,
+                      "id": 1929,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -7715,13 +7815,13 @@
                       "memberName": "CheckUserCreds",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1646,
-                      "src": "3877:54:8",
+                      "src": "3908:54:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view external returns (bool)"
                       }
                     },
-                    "id": 1927,
+                    "id": 1931,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7729,7 +7829,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3877:61:8",
+                    "src": "3908:61:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -7737,49 +7837,49 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "3864:74:8"
+                  "src": "3895:74:8"
                 },
                 {
                   "expression": {
-                    "id": 1929,
+                    "id": 1933,
                     "name": "Creds",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1921,
-                    "src": "3955:5:8",
+                    "referencedDeclaration": 1925,
+                    "src": "3986:5:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1919,
-                  "id": 1930,
+                  "functionReturnParameters": 1923,
+                  "id": 1934,
                   "nodeType": "Return",
-                  "src": "3948:12:8"
+                  "src": "3979:12:8"
                 }
               ]
             },
             "functionSelector": "ba275631",
-            "id": 1932,
+            "id": 1936,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "CredToken",
-            "nameLocation": "3782:9:8",
+            "nameLocation": "3813:9:8",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1916,
+              "id": 1920,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1913,
+                  "id": 1917,
                   "mutability": "mutable",
                   "name": "_LoginContract",
-                  "nameLocation": "3800:14:8",
+                  "nameLocation": "3831:14:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1932,
-                  "src": "3792:22:8",
+                  "scope": 1936,
+                  "src": "3823:22:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -7787,10 +7887,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1912,
+                    "id": 1916,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3792:7:8",
+                    "src": "3823:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -7801,13 +7901,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1915,
+                  "id": 1919,
                   "mutability": "mutable",
                   "name": "_user",
-                  "nameLocation": "3823:5:8",
+                  "nameLocation": "3854:5:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1932,
-                  "src": "3815:13:8",
+                  "scope": 1936,
+                  "src": "3846:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -7815,10 +7915,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1914,
+                    "id": 1918,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3815:7:8",
+                    "src": "3846:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -7828,21 +7928,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3791:38:8"
+              "src": "3822:38:8"
             },
             "returnParameters": {
-              "id": 1919,
+              "id": 1923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1918,
+                  "id": 1922,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1932,
-                  "src": "3849:4:8",
+                  "scope": 1936,
+                  "src": "3880:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -7850,10 +7950,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1917,
+                    "id": 1921,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3849:4:8",
+                    "src": "3880:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -7862,21 +7962,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3848:6:8"
+              "src": "3879:6:8"
             },
-            "scope": 1933,
-            "src": "3773:194:8",
+            "scope": 1937,
+            "src": "3804:194:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1934,
-        "src": "1820:2149:8",
+        "scope": 1938,
+        "src": "1820:2180:8",
         "usedErrors": []
       }
     ],
-    "src": "0:3988:8"
+    "src": "0:4019:8"
   },
   "compiler": {
     "name": "solc",
@@ -7884,7 +7984,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-02-21T18:42:33.916Z",
+  "updatedAt": "2022-02-21T19:46:03.068Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
