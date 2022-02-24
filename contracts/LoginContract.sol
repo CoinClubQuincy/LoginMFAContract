@@ -5,12 +5,11 @@ import "./PrivateAccessToken.sol";
 
 //interface for other contract to read status
 interface LoginContract_Interface{
-    function Login(string memory _enterPass)external view returns(bool);
     function CheckUserCreds(address _user)external view returns(bool);
+    function login(string memory _y)external view returns(bool);
 }
 contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     //new token that will allow for a smart contract to check credentials 
-    string private Login_Pass;
     event ContractAddress(address indexed _ContractSelf);
 
 
@@ -19,14 +18,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
         emit ContractAddress(address(this));
     }
 
-    //Dapp Contracts can check passwords
-    function Login(string memory _enterPass)external view returns(bool){
-        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){
-            return true;
-        } else{
-            return false;
-        }
-    }
+
     //I can grab the OnlyToken modifier from the Inherited contract
     function User_Login(string memory _enterPass)public view OnlyToken returns(bool){
         if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){
@@ -40,6 +32,14 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
         if(PrivateAccessToken.OnlyIf(_user,1) == true){
             return true;
         } else {
+            return false;
+        }
+    }
+    //Dapp Contracts can check passwords
+    function login(string memory _enterPass)public view returns(bool){
+        if(keccak256(abi.encodePacked(_enterPass)) == keccak256(abi.encodePacked(PrivateViewData()))){
+            return true;
+        }else{
             return false;
         }
     }
@@ -77,22 +77,22 @@ contract DAppLoginContract{
     }
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
-    function userLogin(address _LoginContract,string memory _enterPass)public payable returns(string memory){
+    function userLogin(address _LoginContract,string memory _enterPass)public returns(bool){
         require(logins[_LoginContract].exist==true);
-        bool Password = LoginContract_Interface(_LoginContract).Login(_enterPass);  //Has correct Password
+        bool Password = LoginContract_Interface(_LoginContract).login(_enterPass);  //Has correct Password
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
         if(Creds==true && Password==true){
             logins[_LoginContract].status=true;
-            return "Login";  //user successfully logs in!
+            return true;  //user successfully logs in!
         } else{
-            return "Unable to Login"; //User fails to have correct NFT access or incorect password
+            return false; //User fails to have correct NFT access or incorect password
         }
     }
     //check user
     function CredToken(address _LoginContract,address _user)public view returns(bool){
-        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
-        return Creds;
+        return LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
+        
     }
 }
 //- Dev: Quincy J
