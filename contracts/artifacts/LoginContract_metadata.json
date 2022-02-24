@@ -222,25 +222,6 @@
 						"type": "string"
 					}
 				],
-				"name": "Login",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_enterPass",
-						"type": "string"
-					}
-				],
 				"name": "User_Login",
 				"outputs": [
 					{
@@ -340,6 +321,25 @@
 					}
 				],
 				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_enterPass",
+						"type": "string"
+					}
+				],
+				"name": "login",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -590,19 +590,19 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0x3c67643ec4313e1c70fc1e447ea1d634772744d6ceb38bab151a1a3d062ed575",
+			"keccak256": "0x127add6ce5220f73162b250d63d0e09f995422fb4c6439f3194e6bca40d7d2e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8933216f2384ea6a5152423aedd49663da236e93a617c44cd5a9c5b8a5f7c1f9",
-				"dweb:/ipfs/QmUCbvFWfwAGBUM2pvsnKWYXzjkyJrDA4br2jXZRHs19KF"
+				"bzz-raw://6204529c6bf276546f1cb45e3b7402301fc3f99f427982708dd4ce1551ab8648",
+				"dweb:/ipfs/QmV1RtRM8cNgthajw5yNs21z3MatuXSPvCzb1RekfSQr6k"
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {
-			"keccak256": "0x196604f9d18b4bf794c56cefb5704480b4d219521564a3ccad959c4025632fc9",
+			"keccak256": "0xc7f0f09c6c1a541fdd862a5f46cebb89078b571fcc105eed88547fb7b77cf065",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://224f92f5fa1d135ef5766664f158c44999974c13903069870729364c98193684",
-				"dweb:/ipfs/QmeiJtuXR16GHm3hkR47pE8wpGft6YSvEfgkMH6yjXMLsN"
+				"bzz-raw://c07da9d3e844d4a5f6fb1e6c37f0d03b5eb9f8c7afd19884c453bed8453ebf61",
+				"dweb:/ipfs/QmPs8VcSF4gPnfocWC7vzDpZHMrUYprxwf9FJwfgaEiUiB"
 			]
 		}
 	},

@@ -50,7 +50,7 @@
 		"gasEstimates": null,
 		"methodIdentifiers": {
 			"CheckUserCreds(address)": "05f8c896",
-			"Login(string)": "0b2d8924"
+			"login(string)": "3a7d280c"
 		}
 	},
 	"abi": [
@@ -77,11 +77,11 @@
 			"inputs": [
 				{
 					"internalType": "string",
-					"name": "_enterPass",
+					"name": "_y",
 					"type": "string"
 				}
 			],
-			"name": "Login",
+			"name": "login",
 			"outputs": [
 				{
 					"internalType": "bool",

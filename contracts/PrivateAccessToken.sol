@@ -33,7 +33,7 @@ contract PrivateAccessToken is ERC1155{
     function ViewData() public multi_Token view returns(string memory){
         return PrivateData;
     }
-    function PrivateViewData() internal view returns(string memory){
+    function PrivateViewData()internal view returns(string memory){
         return PrivateData;
     }
     //This function will check if current account has token
