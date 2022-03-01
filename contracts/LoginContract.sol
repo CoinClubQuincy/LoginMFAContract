@@ -36,7 +36,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
         }
     }
     //Dapp Contracts can check passwords
-    function login(string memory _enterPass)public view returns(bool){
+    function login(string memory _enterPass)external view returns(bool){
         if(keccak256(abi.encodePacked(_enterPass)) == keccak256(abi.encodePacked(PrivateViewData()))){
             return true;
         }else{

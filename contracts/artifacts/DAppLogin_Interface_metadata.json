@@ -9,11 +9,16 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
 						"name": "_user",
 						"type": "address"
 					}
 				],
-				"name": "CheckUserCreds",
+				"name": "CredToken",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -27,12 +32,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_y",
-						"type": "string"
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
 					}
 				],
-				"name": "login",
+				"name": "LoginStatus",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -41,6 +46,73 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "Logout",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					}
+				],
+				"name": "Register",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_LoginContract",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_enterPass",
+						"type": "string"
+					}
+				],
+				"name": "userLogin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -57,7 +129,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Documents/GitHub/LoginContract/contracts/LoginContract.sol": "LoginContract_Interface"
+			"Documents/GitHub/LoginContract/contracts/LoginContract.sol": "DAppLogin_Interface"
 		},
 		"evmVersion": "london",
 		"libraries": {},
