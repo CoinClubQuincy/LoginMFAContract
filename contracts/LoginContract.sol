@@ -44,6 +44,13 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
         }
     }
 }
+interface DAppLogin_Interface{
+    function userLogin(address _LoginContract,string memory _enterPass)external returns(bool);
+    function CredToken(address _LoginContract,address _user)external view returns(bool);
+    function Logout(address _LoginContract,address _user)external payable returns(string memory);
+    function LoginStatus(address _LoginContract) external view returns(bool);
+    function Register(address _LoginContract)external returns(bool);
+}
 //DApps can have this contract be the login contract for users to use this application
 contract DAppLoginContract{
     uint TotalAccounts =0;
