@@ -10,7 +10,7 @@ interface LoginContract_Interface{
 }
 contract LoginContract is PrivateAccessToken,LoginContract_Interface{
     //new token that will allow for a smart contract to check credentials 
-    event ContractAddress(address indexed _ContractSelf);
+    event ContractAddress(address _ContractSelf);
 
 
     //lauch Login contract with PrivateAccessToken Contract as dependancy

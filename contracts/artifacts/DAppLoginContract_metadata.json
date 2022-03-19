@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.12+commit.f00d7308"
+		"version": "0.8.13+commit.abaa5c0e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -213,11 +213,11 @@
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/LoginContract.sol": {
-			"keccak256": "0xdb040e9d04976c517ffa390f723fb13e8e5777be9971e2f11d5682c7c4b3aaac",
+			"keccak256": "0x1e5d099896206d676a21d5b8d885919d8fc591c04c75442e0e697520a1777133",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b57008870423d87f379a26364ecca5c607521a9773eb30f3dff3a9e5d0e21c51",
-				"dweb:/ipfs/QmaDyRG61gDmyVVeriq19DjQv1sDKxzhMu3dFvZ4kH7a61"
+				"bzz-raw://71147ee832ec1e8b357fad1ea47da18424fdd7c10ccf15c3922c5b17dbfc528f",
+				"dweb:/ipfs/QmPTHL75HYGa94ruGH4gpMTHN5oNdjmXxjEU3m4CkBEsue"
 			]
 		},
 		"Documents/GitHub/LoginContract/contracts/PrivateAccessToken.sol": {
