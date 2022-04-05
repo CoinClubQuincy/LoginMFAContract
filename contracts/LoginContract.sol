@@ -54,7 +54,7 @@ interface DAppLogin_Interface{
     function Register(address _LoginContract)external returns(bool);
 }
 //DApps can have this contract be the login contract for users to use this application
-contract DAppLoginContract{
+contract DAppLoginContract is DAppLogin_Interface{
     uint TotalAccounts =0;
     constructor(){}
     
