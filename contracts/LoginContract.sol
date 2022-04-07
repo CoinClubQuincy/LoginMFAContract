@@ -43,8 +43,6 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
             return false;
         }
     }
-    fallback() external payable {}
-    receive() external payable {}
 }
 interface DAppLogin_Interface{
     function userLogin(address _LoginContract,string memory _enterPass)external returns(bool);
@@ -103,7 +101,5 @@ contract DAppLoginContract is DAppLogin_Interface{
         return LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
         
     }
-    fallback() external payable {}
-    receive() external payable {}
 }
 //- Dev: Quincy J
