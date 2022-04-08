@@ -47,7 +47,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
 interface DAppLogin_Interface{
     function userLogin(address _LoginContract,string memory _enterPass)external returns(bool);
     function CredToken(address _LoginContract,address _user)external view returns(bool);
-    function Logout(address _LoginContract,address _user)external payable returns(string memory);
+    function Logout(address _LoginContract,address _user)external returns(string memory);
     function LoginStatus(address _LoginContract) external view returns(bool);
     function Register(address _LoginContract)external returns(bool);
 }
@@ -77,7 +77,7 @@ contract DAppLoginContract is DAppLogin_Interface{
         return logins[_LoginContract].status;
     }
     //user Changes Login status
-    function Logout(address _LoginContract,address _user)public payable returns(string memory){
+    function Logout(address _LoginContract,address _user)public returns(string memory){
         require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
         logins[_LoginContract].status= false;
         return "Logged out";
