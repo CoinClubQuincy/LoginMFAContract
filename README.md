@@ -1,4 +1,6 @@
-# XDC LoginContract
+# XDC LoginContract 
+# (Private Network: single hash & store value / Puppeth Private network
+# Public Network: Double hash & store single hash) / Mainnet
 This contract will show how a NFT token can be used as a login token 
 
 Now A login structure like this has 2 parts, a User Login Contract & a DApp login contract. The user will launch their own contract the User Login Contract and in it they will set their password and set some meta data in the URI (Uniform Resource Identifier) identifying: ContactAddress & total Token amount. They will then Register their LoginContract to a DApp Login Contract of the DApp they are connecting to as part of their sign up process now that they are registered in the DApp Login the DApp Login Contract can pass parameters and check if user logging in is using the correct password and if they hold the correct token in their wallet by checking the status of the User Login Contract. This means all parameters get confirmed in the originally established contract allowing a secure way to login and now access a Dapp without having to surrender your password data to a 3rd party
