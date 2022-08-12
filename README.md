@@ -1,5 +1,5 @@
 # XDC LoginContract 
-# Private Network: single hash & store value / Puppeth Private network
+# Private Network: single hash & store value / Puppeth Private
 # Public Network: Double hash & store single hash / Public Mainnet
 This contract will show how a NFT token can be used as a login token 
 
