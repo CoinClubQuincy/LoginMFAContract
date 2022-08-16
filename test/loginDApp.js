@@ -1,4 +1,4 @@
-const LoginContract = artifacts.require("PrivateLoginContract");
+const LoginContract = artifacts.require("LoginContract");
 const DAppLoginContract = artifacts.require("DAppLoginContract");
 
 contract('LoginContract',() => {
@@ -6,8 +6,8 @@ contract('LoginContract',() => {
         const instance = await LoginContract.deployed();
         const result = await(instance.login("PASS",""));
         //LoginContract.address
-        console.log(LoginContract.address);
-        assert(LoginContract.address !== '');
+        console.log(instance.address);
+        assert(instance.address !== '');
     });
 });
 //---------------------------------------------------------------------
