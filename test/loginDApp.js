@@ -1,27 +1,79 @@
 const LoginContract = artifacts.require("LoginContract");
 const DAppLoginContract = artifacts.require("DAppLoginContract");
 
-contract('LoginContract',() => {
+const PublicLoginContract = artifacts.require("PublicLoginContract");
+const PublicDAppLoginContract = artifacts.require("PublicDAppLoginContract");
+
+contract('PrivateLoginContract',(accounts) => {
+    var instance = null;
+    var DAppInstance = null;
+    before( async() => {
+        instance = await LoginContract.deployed("PASS","URI");
+        DAppInstance = await DAppLoginContract.deployed();
+    });
     it('Deploy Login Contract', async () => {
-        const instance = await LoginContract.deployed();
-        const result = await(instance.login("PASS",""));
+        var instance = await LoginContract.deployed("PASS","URI");
+        const result = await(instance.login("PASS"));
         //LoginContract.address
         console.log(instance.address);
         assert(instance.address !== '');
     });
-});
-//---------------------------------------------------------------------
-contract('DAppLoginContract',() => {
-    it('Deploy Login Contract', async () => {
-        const instance = await DAppLoginContract.deployed();
-        var register = await instance.Register("0x0350a837C2cc4B148aA5254F28Ec70fabBc9e064");
-        var login = await(instance.userLogin("0x345cA3e014Aaf5dcA488057592ee47305D9B3e10","PASS")); 
-        const qresult = await(instance.CredToken("0x0350a837C2cc4B148aA5254F28Ec70fabBc9e064","0xd2e8d80eec760da7dd35c7c21256e07f28d822d5")); 
+    it('Deploy DApp Login Contract', async () => {
+        var register = await DAppInstance.Register(instance.address);
+        var login = await(DAppInstance.userLogin(instance.address,"PASS")); 
+        const qresult = await(DAppInstance.CredToken(instance.address,accounts[0])); 
 
+        var stats = await(DAppInstance.LoginStatus(instance.address)); 
+        console.log(stats);
+        console.log(qresult);
+        assert(login.receipt.status == true);
+    });
+    it('check DApp Login status (Login)', async () => {
+        var status = await(DAppInstance.LoginStatus(instance.address)); 
+        console.log(status);
+        assert(status == true);
+    });
+    it('check DApp Login status (Logout)', async () => {
+        var logout = await(DAppInstance.Logout(instance.address,accounts[0]));
+        var status = await(DAppInstance.LoginStatus(instance.address)); 
+        console.log(status);
+        assert(status == false);
+    });
+});
+
+contract('PublicLoginContract',(accounts) => {
+    var instance = null;
+    var DAppInstance = null;
+    before( async() => {
+        instance = await PublicLoginContract.deployed("PASS","URI");
+        DAppInstance = await PublicDAppLoginContract.deployed();
+    });
+    it('Deploy Login Contract', async () => {
+        var instance = await LoginContract.deployed("PASS","URI");
+        const result = await(instance.login("PASS"));
         //LoginContract.address
-        console.log(result);
-        console.log(register);
-        //console.log(login);
+        console.log(instance.address);
         assert(instance.address !== '');
+    });
+    it('Deploy DApp Login Contract', async () => {
+        var register = await DAppInstance.Register(instance.address);
+        var login = await(DAppInstance.userLogin(instance.address,"PASS")); 
+        const qresult = await(DAppInstance.CredToken(instance.address,accounts[0])); 
+
+        var stats = await(DAppInstance.LoginStatus(instance.address)); 
+        console.log(stats);
+        console.log(qresult);
+        assert(login.receipt.status == true);
+    });
+    it('check DApp Login status (Login)', async () => {
+        var status = await(DAppInstance.LoginStatus(instance.address)); 
+        console.log(status);
+        assert(status == true);
+    });
+    it('check DApp Login status (Logout)', async () => {
+        var logout = await(DAppInstance.Logout(instance.address,accounts[0]));
+        var status = await(DAppInstance.LoginStatus(instance.address)); 
+        console.log(status);
+        assert(status == false);
     });
 });
