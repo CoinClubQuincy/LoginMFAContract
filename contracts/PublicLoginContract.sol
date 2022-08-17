@@ -4,11 +4,11 @@ import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "./PublicPrivateAccessToken.sol";
 
 //interface for other contract to read status
-interface LoginContract_Interface{
+interface PublicLoginContract_Interface{
     function CheckUserCreds(address _user)external view returns(bool);
     function login(string memory _y)external view returns(bool);
 }
-contract LoginContract is PublicPrivateAccessToken,LoginContract_Interface{
+contract PublicLoginContract is PublicPrivateAccessToken,PublicLoginContract_Interface{
     //new token that will allow for a smart contract to check credentials 
     event ContractAddress(address _ContractSelf);
 
@@ -44,7 +44,7 @@ contract LoginContract is PublicPrivateAccessToken,LoginContract_Interface{
         }
     }
 }
-interface DAppLogin_Interface{
+interface PublicDAppLogin_Interface{
     function userLogin(address _LoginContract,string memory _enterPass)external returns(bool);
     function CredToken(address _LoginContract,address _user)external view returns(bool);
     function Logout(address _LoginContract,address _user)external returns(string memory);
@@ -52,7 +52,7 @@ interface DAppLogin_Interface{
     function Register(address _LoginContract)external returns(bool);
 }
 //DApps can have this contract be the login contract for users to use this application
-contract DAppLoginContract is DAppLogin_Interface{
+contract PublicDAppLoginContract is PublicDAppLogin_Interface{
     uint TotalAccounts =0;
     constructor(){}
     
@@ -78,7 +78,7 @@ contract DAppLoginContract is DAppLogin_Interface{
     }
     //user Changes Login status
     function Logout(address _LoginContract,address _user)public returns(string memory){
-        require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
+        require(PublicLoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
         logins[_LoginContract].status= false;
         return "Logged out";
     }
@@ -86,8 +86,8 @@ contract DAppLoginContract is DAppLogin_Interface{
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public returns(bool){
         require(logins[_LoginContract].exist==true);
-        bool Password = LoginContract_Interface(_LoginContract).login(_enterPass);  //Has correct Password
-        bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
+        bool Password = PublicLoginContract_Interface(_LoginContract).login(_enterPass);  //Has correct Password
+        bool Creds = PublicLoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
         if(Creds==true && Password==true){
             logins[_LoginContract].status=true;
@@ -98,7 +98,7 @@ contract DAppLoginContract is DAppLogin_Interface{
     }
     //check user
     function CredToken(address _LoginContract,address _user)public view returns(bool){
-        return LoginContract_Interface(_LoginContract).CheckUserCreds(_user);
+        return PublicLoginContract_Interface(_LoginContract).CheckUserCreds(_user);
     }
 }
 //- Dev: Quincy J
