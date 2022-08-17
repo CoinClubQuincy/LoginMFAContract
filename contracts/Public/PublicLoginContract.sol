@@ -1,7 +1,7 @@
 pragma solidity ^0.8.10;
 // SPDX-License-Identifier: MIT
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
-import "./PublicPrivateAccessToken.sol";
+import "../Public/PublicPrivateAccessToken.sol";
 
 //interface for other contract to read status
 interface PublicLoginContract_Interface{
