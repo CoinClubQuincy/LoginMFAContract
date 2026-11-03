@@ -21,7 +21,7 @@ contract LoginContract is PrivateAccessToken,LoginContract_Interface{
 
     //I can grab the OnlyToken modifier from the Inherited contract
     function User_Login(string memory _enterPass)public view OnlyToken returns(bool){
-        if(keccak256(abi.encodePacked(ViewData())) == keccak256(abi.encodePacked(_enterPass))){
+        if(keccak256(abi.encodePacked(PrivateViewData())) == keccak256(abi.encodePacked(_enterPass))){
             return true;
         } else{
             return false;
@@ -48,7 +48,7 @@ interface DAppLogin_Interface{
     function userLogin(address _LoginContract,string memory _enterPass)external returns(bool);
     function CredToken(address _LoginContract,address _user)external view returns(bool);
     function Logout(address _LoginContract,address _user)external returns(string memory);
-    function LoginStatus(address _LoginContract) external view returns(bool);
+    function LoginStatus(address _LoginContract,address _user) external view returns(bool);
     function Register(address _LoginContract)external returns(bool);
 }
 //DApps can have this contract be the login contract for users to use this application
@@ -56,41 +56,40 @@ contract DAppLoginContract is DAppLogin_Interface{
     uint TotalAccounts =0;
     constructor(){}
     
-    mapping(address => Logins) logins;
     //Keeps list of Login Contracts
-    struct Logins{
-        bool exist;
-        bool status;
-    }
+    mapping(address => bool) registered;
+    //Whether each user is logged in through each Login Contract
+    mapping(address => mapping(address => bool)) sessions;
+
     //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
     function Register(address _LoginContract)public returns(bool){
-        if(logins[_LoginContract].exist == true){
+        if(registered[_LoginContract] == true){
             return false;
         }else{
-            logins[_LoginContract] =Logins(true,false);
+            registered[_LoginContract] = true;
             TotalAccounts++;
             return true;
         }
     }
-    //Checks Current Users Login Contracts
-    function LoginStatus(address _LoginContract) public view returns(bool){
-        return logins[_LoginContract].status;
+    //Checks whether a user is logged in. Losing the credential token ends the session
+    function LoginStatus(address _LoginContract,address _user) public view returns(bool){
+        return sessions[_LoginContract][_user] && CredToken(_LoginContract,_user);
     }
-    //user Changes Login status
+    //users log themselves out
     function Logout(address _LoginContract,address _user)public returns(string memory){
-        require(LoginContract_Interface(_LoginContract).CheckUserCreds(_user) == true);
-        logins[_LoginContract].status= false;
+        require(msg.sender == _user, "you can only log yourself out");
+        sessions[_LoginContract][_user]= false;
         return "Logged out";
     }
     //user can login and have DApp check login COntract for validity
     // contract address & password to login
     function userLogin(address _LoginContract,string memory _enterPass)public returns(bool){
-        require(logins[_LoginContract].exist==true);
+        require(registered[_LoginContract]==true, "login contract is not registered");
         bool Password = LoginContract_Interface(_LoginContract).login(_enterPass);  //Has correct Password
         bool Creds = LoginContract_Interface(_LoginContract).CheckUserCreds(msg.sender); //Has correct Credential Token
         //Check Login Contract and Registration
         if(Creds==true && Password==true){
-            logins[_LoginContract].status=true;
+            sessions[_LoginContract][msg.sender]=true;
             return true;  //user successfully logs in!
         } else{
             return false; //User fails to have correct NFT access or incorect password

@@ -1,5 +1,5 @@
 const Login = artifacts.require("PublicLoginContract");
 
-module.exports = function (deployer) {
-  deployer.deploy(Login,"PASS","URI");
+module.exports = function (deployer, network, accounts) {
+  deployer.deploy(Login,accounts[0],"URI");
 };

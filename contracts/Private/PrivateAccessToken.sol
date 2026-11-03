@@ -2,6 +2,10 @@ pragma solidity ^0.8.10;
 // SPDX-License-Identifier: MIT
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
+/// @title Credential tokens plus a stored password, for private networks only
+/// @notice The password sits in contract storage in plain text. Use this only on a network where
+/// every party who can read chain state is trusted with it. On any public chain, use the
+/// contracts in contracts/Public instead.
 contract PrivateAccessToken is ERC1155{
     string private PrivateData;
     uint Token =0;
@@ -13,12 +17,12 @@ contract PrivateAccessToken is ERC1155{
     }
     //The modifier is so only the token holder is allowed to access function 
     modifier OnlyToken(){
-        require(OnlyIf(msg.sender,1)==true);
+        require(OnlyIf(msg.sender,1)==true, "you must hold a credential token");
         _;
     }
     // 
     modifier multi_Token(){
-        require(OnlyIf(msg.sender,3)==true);
+        require(OnlyIf(msg.sender,3)==true, "you must hold 3 credential tokens");
         _;
     }
     //The OnlyIf Function will run in the modifier to check if the user accessing the contract is the token holder
@@ -45,10 +49,11 @@ contract PrivateAccessToken is ERC1155{
          PrivateData = _newData;
          return true;
     }
-    //Burn compramsed tokens
+    //Recovery: whoever holds 3 tokens can burn credentials from any account, without its
+    //consent, so stolen or compromised tokens can be cancelled
     function Burn(uint _amount, address _account)public multi_Token returns(string memory){
             _burn(_account, Token, _amount);
-            return "burning {_amount} Credential tokens from {_account}";
+            return "credential tokens burned";
     }
 }
 
