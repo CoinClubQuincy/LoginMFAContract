@@ -7,6 +7,7 @@ import "../Public/PublicPrivateAccessToken.sol";
 interface PublicLoginContract_Interface{
     function CheckUserCreds(address _user)external view returns(bool);
     function login(address _user,bytes memory _signature)external returns(bool);
+    function sessionEpoch(address _user)external view returns(uint);
 }
 /// @notice A login needs a credential token and a signature from the second factor key. The
 /// signature names this contract, the DApp, the user, a nonce and the chain, so it works once,
@@ -19,6 +20,8 @@ contract PublicLoginContract is PublicPrivateAccessToken,PublicLoginContract_Int
     event ContractAddress(address _ContractSelf);
     //How many logins each user has made, which makes each signature single-use
     mapping(address => uint) public nonces;
+    //Changes whenever a user's credential tokens move, which ends their sessions
+    mapping(address => uint) public override sessionEpoch;
 
     //lauch Login contract with PrivateAccessToken Contract as dependancy
     constructor(address _secondFactor ,string memory _URI)PublicPrivateAccessToken(_secondFactor,_URI){
@@ -35,6 +38,13 @@ contract PublicLoginContract is PublicPrivateAccessToken,PublicLoginContract_Int
     //Token holders can test a signature for a DApp without using it up
     function User_Login(address _dapp,bytes memory _signature)public view OnlyToken returns(bool){
         return validSignature(_dapp,msg.sender,_signature);
+    }
+    //Moving or burning any credential token ends the sender's sessions, even if the tokens come back
+    function _afterTokenTransfer(address _operator,address _from,address _to,uint256[] memory _ids,uint256[] memory _amounts,bytes memory _data) internal virtual override{
+        super._afterTokenTransfer(_operator,_from,_to,_ids,_amounts,_data);
+        if(_from != address(0)){
+            sessionEpoch[_from]++;
+        }
     }
     // external source can check if user data holds correct token
     function CheckUserCreds(address _user)public view returns(bool){
@@ -72,6 +82,8 @@ contract PublicDAppLoginContract is PublicDAppLogin_Interface{
     mapping(address => bool) registered;
     //Whether each user is logged in through each Login Contract
     mapping(address => mapping(address => bool)) sessions;
+    //The login contract's session epoch for each user at the moment they logged in
+    mapping(address => mapping(address => uint)) sessionEpochs;
 
     //User can add their login contract to this DApp so this Daap can check their credentials in reference to the logincontract
     function Register(address _LoginContract)public returns(bool){
@@ -83,9 +95,11 @@ contract PublicDAppLoginContract is PublicDAppLogin_Interface{
             return true;
         }
     }
-    //Checks whether a user is logged in. Losing the credential token ends the session
+    //Checks whether a user is logged in. Moving or losing a credential token ends the session
     function LoginStatus(address _LoginContract,address _user) public view returns(bool){
-        return sessions[_LoginContract][_user] && CredToken(_LoginContract,_user);
+        return sessions[_LoginContract][_user]
+            && sessionEpochs[_LoginContract][_user] == PublicLoginContract_Interface(_LoginContract).sessionEpoch(_user)
+            && CredToken(_LoginContract,_user);
     }
     //users log themselves out
     function Logout(address _LoginContract,address _user)public returns(string memory){
@@ -105,6 +119,7 @@ contract PublicDAppLoginContract is PublicDAppLogin_Interface{
             return false;
         }
         sessions[_LoginContract][msg.sender]=true;
+        sessionEpochs[_LoginContract][msg.sender]=PublicLoginContract_Interface(_LoginContract).sessionEpoch(msg.sender);
         return true;
     }
     //check user

@@ -134,6 +134,38 @@ contract LoginTest is Test {
         assertFalse(dapp.LoginStatus(address(login), alice));
     }
 
+    function test_ASessionStaysEndedWhenTheTokensComeBack() public {
+        assertTrue(loginAs(alice, sign(factorKey, address(dapp), alice)));
+        vm.prank(alice);
+        login.safeTransferFrom(alice, bob, 0, 5, "");
+        vm.prank(bob);
+        login.safeTransferFrom(bob, alice, 0, 5, "");
+        assertTrue(dapp.CredToken(address(login), alice));
+        assertFalse(dapp.LoginStatus(address(login), alice));
+
+        assertTrue(loginAs(alice, sign(factorKey, address(dapp), alice)));
+        assertTrue(dapp.LoginStatus(address(login), alice));
+    }
+
+    function test_MovingSomeTokensEndsTheSession() public {
+        assertTrue(loginAs(alice, sign(factorKey, address(dapp), alice)));
+        vm.prank(alice);
+        login.safeTransferFrom(alice, bob, 0, 1, "");
+        assertTrue(dapp.CredToken(address(login), alice));
+        assertFalse(dapp.LoginStatus(address(login), alice));
+    }
+
+    function test_ReceivingTokensKeepsASessionAndOnlyTheSendersEnds() public {
+        vm.prank(alice);
+        login.safeTransferFrom(alice, bob, 0, 2, "");
+        assertTrue(loginAs(bob, sign(factorKey, address(dapp), bob)));
+        assertTrue(loginAs(alice, sign(factorKey, address(dapp), alice)));
+        vm.prank(alice);
+        login.safeTransferFrom(alice, bob, 0, 1, "");
+        assertTrue(dapp.LoginStatus(address(login), bob));
+        assertFalse(dapp.LoginStatus(address(login), alice));
+    }
+
     function test_ThreeTokensAreNeededToReplaceTheSecondFactor() public {
         vm.prank(alice);
         login.safeTransferFrom(alice, bob, 0, 3, "");
@@ -201,6 +233,21 @@ contract LoginTest is Test {
         vm.prank(alice);
         d.Logout(address(p), alice);
         assertFalse(d.LoginStatus(address(p), alice));
+    }
+
+    function test_Private_ASessionStaysEndedWhenTheTokensComeBack() public {
+        (LoginContract p, DAppLoginContract d) = privateSetup();
+        vm.prank(alice);
+        assertTrue(d.userLogin(address(p), "pw"));
+        assertTrue(d.LoginStatus(address(p), alice));
+        vm.prank(alice);
+        p.safeTransferFrom(alice, bob, 0, 5, "");
+        vm.prank(bob);
+        p.safeTransferFrom(bob, alice, 0, 5, "");
+        assertFalse(d.LoginStatus(address(p), alice));
+        vm.prank(alice);
+        assertTrue(d.userLogin(address(p), "pw"));
+        assertTrue(d.LoginStatus(address(p), alice));
     }
 
     function test_Private_ThreeTokensAreNeededToEditAndBurn() public {

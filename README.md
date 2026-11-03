@@ -56,7 +56,7 @@ The signature covers the login contract, the DApp, the user, a nonce and the cha
 | `PublicLoginContract.Burn(amount, account)` | Burns credentials from any account, without its consent, so stolen ones can be cancelled. The caller needs 3 NFTs |
 | `PublicDAppLoginContract.Register(login)` | Adds a user's login contract to the DApp |
 | `PublicDAppLoginContract.userLogin(login, signature)` | Logs the caller in when both factors pass |
-| `PublicDAppLoginContract.LoginStatus(login, user)` | Whether that user is logged in. Losing the NFTs ends the session |
+| `PublicDAppLoginContract.LoginStatus(login, user)` | Whether that user is logged in. Moving or losing any of the NFTs ends the session, even if they come back |
 | `PublicDAppLoginContract.Logout(login, user)` | Logs the caller out |
 
 The page under `Web3/` is an unwired mockup. Its script file is empty and it still shows a password field.
@@ -87,7 +87,7 @@ forge create contracts/Public/PublicLoginContract.sol:PublicLoginContract --rpc-
 
 ## What is tested
 
-[`test/foundry/Login.t.sol`](test/foundry/Login.t.sol) has 23 tests and runs in CI on every push.
+[`test/foundry/Login.t.sol`](test/foundry/Login.t.sol) has 27 tests and runs in CI on every push.
 
 | Tested | Not tested |
 | --- | --- |
@@ -95,7 +95,7 @@ forge create contracts/Public/PublicLoginContract.sol:PublicLoginContract --rpc-
 | Wrong key, malformed signature, no token | An independent security audit |
 | A signature copied by another sender, or used for another DApp or chain | A real wallet signing the message |
 | Nobody else using up a signature | |
-| Sessions being per user, logging out only yourself, and losing tokens ending a session | |
+| Sessions being per user, logging out only yourself, and moving tokens ending a session for good | |
 | Replacing the key and burning credentials needing 3 tokens | |
 | The private contracts, including their password being readable from storage | |
 
@@ -104,6 +104,7 @@ forge create contracts/Public/PublicLoginContract.sol:PublicLoginContract --rpc-
 Contracts already deployed are unaffected and keep the old behaviour.
 
 - The public contracts no longer use a password. The constructor and `Edit` take an address, and `userLogin`, `login` and `User_Login` take a signature. `ViewData` was removed in favour of the public `secondFactor`.
+- A session used to come back if the tokens left and returned. Moving a token now ends it, using the new `sessionEpoch`, which login contracts must provide.
 - `login` is no longer a view, because it uses up a nonce.
 - `LoginStatus` now takes a user, in both variants. It used to report one status per login contract, shared by every holder.
 - `Logout` can only be called by the user it logs out, in both variants. Anyone holding nothing could log someone out before.
@@ -118,7 +119,7 @@ Contracts already deployed are unaffected and keep the old behaviour.
 | Anyone can deploy a login contract | A login proves control of the named contract and nothing more. A DApp must decide which login contracts it trusts |
 | Three tokens control everything | Whoever holds 3 can replace the key and burn anyone's tokens. Keep them apart from the key |
 | A lost second factor key needs 3 tokens to replace | Without them, nobody can log in again |
-| A session survives a key change | Replacing the key does not log people out. Only losing the tokens or logging out does |
+| A session survives a key change | Replacing the key does not log people out. Only moving or losing the tokens, or logging out, does |
 | The private contract's password is readable | Anyone who can read that network's chain state can read it, as a test shows |
 
 <details>
